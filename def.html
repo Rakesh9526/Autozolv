@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shop - Grid view</title>
+  <meta content="Templines" name="author">
+  <meta content="Autozolv" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/uikit.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="page-shop">
+
+    <style>
+      .uk-width-1-1 {
+    height: 300px;
+    width: 250px;
+    max-width: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Optional: Ensures the image fits nicely within the dimensions */
+}
+
+    </style>
+  <div class="page-wrapper">
+    <header class="page-header page-header-transparent">
+      <div class="page-header__inner">
+        <div class="page-header__left">
+          <div class="logo"><a class="logo__link" href="index.html">
+              <div class="logo__icon"><img style="height: 55px;" src="assets/img/brands/logo.png" alt="Autozolv"></div>
+            </a></div>
+        </div>
+        <div class="page-header__center">
+          <nav class="page-nav" data-uk-navbar>
+            <ul class="uk-navbar-nav">
+              <li><a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+                    <li><a href="page-shop-grid.html">products</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="def.html">Diesel Exhaust Fluid </a></li>
+
+
+                    <li><a href="#">AutoCare</a></li>
+                    <li><a href="#">lubricants</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Franchises</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="franchise.html">Franchises</a>
+                      <li><a href="faq.html">Frequently Asked Questions</a></li>
+                  </ul>
+                </div>
+              </li>     
+              <li><a href="page-contacts.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__right">
+          </a><a class="uk-navbar-toggle menu-btn" href="#offcanvas" data-uk-toggle><img src="assets/img/icons/menu.svg" alt="menu"></a></div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="section-hero">
+        <div class="section-hero__bg" style="background-image: url(assets/img/new/team/coverfrnshiceimg.png)">
+          <div class="uk-container">
+            <div class="section-hero__content">
+              <div class="section-hero__title">
+                <div class="uk-h1">Diesel Exhaust Fluid</div>
+              </div>
+              <div class="section-hero__breadcrumb">
+                <ul class="uk-breadcrumb">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="page-shop-grid.html">Diesel Exhaust Fluid</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+     
+        <div class="uk-section-large uk-container">
+          <div class="page-product">
+            <div class="uk-grid uk-flex-middle" data-uk-grid>
+              <div class="uk-width-2-3@m">
+                <div class="page-product__title">
+                  <div class="uk-h1">What is Diesel Exhaust Fluid?
+                </div><span>Addressing the global issue of smoke emissions, SCR (Selective Catalytic Reduction) technology is essential for diesel vehicles. Our solution, AUTOZOLV DEF, leads the way with innovation and environmental responsibility. This advanced fluid is free of harmful substances and unpleasant odors, drastically reducing emissions and protecting your engine.                </span>
+                </div>
+              </div>
+            </div>
+            <div class="uk-grid" data-uk-grid>
+              <div class="uk-width-2-3@m">
+                <div class="page-product__btns"><button class="danger" type="button" data-toggle="modal" data-target="#technicalDataSheetModal">
+                  <i class="fas fa-star"></i><span>Technical Data Sheet / MSDS</span>
+                </button>
+                  <button class="secondary" type="button"><i class="fas fa-columns"></i><span>PARTNER WITH OUR FRANCHISE</span></button>
+                  <button type="button"><i class="fas fa-columns"></i><span>Join our Global Distribution Network</span></button>
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#contactModal">
+                    <i class="fas fa-envelope"></i><span> Enquiry Now</span>
+                  </button>
+
+
+                  <button type="button"><i class="fas fa-share-alt"></i></button>
+              </div>
+                <div class="page-product__gallery">
+                  <div data-uk-slideshow="min-height: 300; max-height: 430">
+                    <ul class="uk-slideshow-items uk-child-width-1-1">
+                      <li><img  class="uk-width-1-1" src="assets/img/new/20ltrbucket.png" alt="img-gallery" ></li>
+                      <li><img class="uk-width-1-1" src="assets/img/new/10ltrcandef.png" alt="img-gallery" ></li>
+                      <li><img class="uk-width-1-1" src="assets/img/new/1000ltrdef.png" alt="img-gallery" ></li>
+                      <li><img class="uk-width-1-1" src="assets/img/new/5ltrcandef.png" alt="img-gallery" ></li>
+                      <!-- <li><img class="uk-width-1-1" src="assets/img/img-gallery-5-big.jpg" alt="img-gallery" data-uk-cover></li> -->
+                    </ul>
+                    <div class="uk-margin-top" data-uk-slider>
+                      <ul class="uk-thumbnav uk-slider-items uk-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@m uk-child-width-1-5@l">
+                        <li data-uk-slideshow-item="0"><a href="#"><img src="assets/img/new/20ltrbucket.png" alt="img-gallery"></a></li>
+                        <li data-uk-slideshow-item="1"><a href="#"><img src="assets/img/new/10ltrcandef.png"  alt="img-gallery"></a></li>
+                        <li data-uk-slideshow-item="2"><a href="#"><img src="assets/img/new/1000ltrdef.png" alt="img-gallery"></a></li>
+                        <li data-uk-slideshow-item="3"><a href="#"><img src="assets/img/new/5ltrcandef.png" alt="img-gallery"></a></li>
+                        <!-- <li data-uk-slideshow-item="4"><a href="#"><img src="assets/img/img-gallery-5.jpg" alt="img-gallery"></a></li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                     <!-- Section for AdBlue DEF -->
+                      <br><br>
+<div class="product-description">
+  <h1>What is DEF?</h1>
+  <p>
+    AdBlue DEF (Diesel Exhaust Fluid) is a high-purity urea solution designed to reduce harmful emissions from diesel engines. It is injected into the exhaust system to break down nitrogen oxides (NOx) into harmless nitrogen and water vapor. AdBlue is a critical component in meeting environmental standards for diesel-powered vehicles and industrial machinery.
+  </p>
+  <p>
+    It is a non-toxic, colorless, and odorless fluid that ensures efficient operation of SCR (Selective Catalytic Reduction) systems, providing cleaner air by significantly lowering NOx emissions and improving overall engine performance.
+  </p>
+</div>
+                <div class="tab-container">
+                  <!-- Tab Navigation -->
+                  <ul class="tab-nav">
+                    <li class="tab-item active" data-tab="tab-1">How does AUTOZOLV DEF fluid work?</li>
+                    <li class="tab-item" data-tab="tab-2">Quality Control</li>
+                    <li class="tab-item" data-tab="tab-3">Monitoring</li>
+                  </ul>
+          
+
+<!-- Tab Content -->
+<div class="tab-content">
+  <!-- Tab 1: Content for Heading 1 -->
+  <div class="tab-panel tab-1 active">
+    <h2>How does AUTOZOLV DEF fluid work?</h2>
+    <p>
+      When diesel engines burn fuel, polluting chemicals and compounds are produced, including nitrogen oxides and nitrogen dioxide. These elements accumulate in the air and form smog and acid rain.
+    </p>
+  </div>
+
+  <!-- Tab 2: Content for Heading 2 -->
+  <div class="tab-panel tab-2">
+    <h2>Quality Control</h2>
+    <p>
+      AUTOZOLV DEF is manufactured in accordance with ISO 22241, AUS 32, and DIN 70070 specifications. These recommendations describe the required manufacturing, testing, and handling techniques to ensure the best quality diesel exhaust fluid.
+    </p>
+  </div>
+
+  <!-- Tab 3: Content for Heading 3 -->
+  <div class="tab-panel tab-3">
+    <h2>Monitoring</h2>
+    <p>
+      We provide complete tank monitoring services to ensure that you never run out of diesel exhaust fluid. Our cutting-edge monitoring systems maintain track of your fluid levels in real-time, alerting you when supplies are low.
+    </p>
+  </div>
+</div>
+
+                </div>
+                
+    
+              </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="product-block-info">
+                      <div class="pricing">
+                        <div class="pricing-plan">
+                          <img src="/assets/img/new/1000ltrdef.png" alt="Aus40%" class="pricing-image">
+                          <h2>Aus40%</h2>
+                          <a class="custom-link" href="AUS4O.html">Explore more</a>
+                        </div>
+                        <div class="pricing-plan">
+                          <img src="/assets/img/new/20ltrbucket.png" alt="Aus40%" class="pricing-image">
+                          <h2>Aus50%</h2>
+                          <a class="custom-link" href="AUS50.html">Explore more</a>
+                        </div>
+                      </div>
+      
+                    
+                      <div class="product-block-info__email block-icon">
+                        <div class="block-icon__icon"><img src="assets/img/icons/comment.svg" alt="comment"></div>
+                        <div class="block-icon__desc">
+                          <div class="block-icon__title">Contact Via Email</div>
+                          <div class="block-icon__value"><a href="mailto:autozolvdef@gmail.com">autozolvdef@gmail.com</a></div>
+                        </div>
+                      </div>
+                      <div class="product-block-info__phone block-icon">
+                        <div class="block-icon__icon"><img src="assets/img/icons/smartphone.svg" alt="smartphone"></div>
+                        <div class="block-icon__desc">
+                          <div class="block-icon__title">Contact Via Mob</div>
+                          <div class="block-icon__value"><a href="tel:90611 90260">90611 90260</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <aside class="sidebar">
+                        <div class="widjet widjet--form">
+                          <div class="widjet__title">
+                            <div class="uk-h4">Send a message</div><span>Get in touch via message</span>
+                          </div>
+                          <div class="widjet__content">
+                            <!-- Add id to form for targeting with JS -->
+                            <form id="submit-form" action="#">
+                              <!-- Add name attributes to inputs -->
+                              <div class="uk-margin-small"><input class="uk-input uk-form-large" type="text" name="name" placeholder="Your Name"></div>
+                              <div class="uk-margin-small"><input class="uk-input uk-form-large" type="text" name="email" placeholder="Email"></div>
+                              <div class="uk-margin-small"><input class="uk-input uk-form-large" type="text" name="phone" placeholder="Phone (Optional)"></div>
+                              <div class="uk-margin-small"><textarea class="uk-textarea uk-form-large" name="message" placeholder="Message"></textarea></div>
+                              <div class="uk-margin-small uk-text-center">
+                                <button class="uk-button uk-button-danger uk-button-large" type="submit">Send message</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </aside>
+                        </div>                      
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-section-large uk-container">
+          <h3 class="packaging-title">Available Packaging Options</h3>
+          <br>
+          <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" data-uk-grid>
+            <!-- Packaging Cards -->
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/5ltrcandef.png"" alt="5L Jerry Can" class="packaging-img">
+              <div class="packaging-info">
+                <h4>Plastic Jerry Can</h4>
+                <p>Capacity: 5 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div>
+        
+        
+            <!-- 10 L Jerry Can -->
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/1000ltrdef.png" alt="10L Jerry Can" class="packaging-img">
+              <div class="packaging-info">
+                <h4>Plastic Jerry Can</h4>
+                <p>Capacity: 10 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- 10 L Bucket -->
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/20ltrbucket.png" alt="10L Bucket" class="packaging-img">
+              <div class="packaging-info">
+                <h4>Plastic Bucket</h4>
+                <p>Capacity: 10 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- 20 L Bucket -->
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/20ltrcandef.png" alt="20L Bucket" class="packaging-img">
+              <div class="packaging-info">
+                <h4>Plastic Bucket</h4>
+                <p>Capacity: 20 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- 20 L Jerry Can -->
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/5ltrcandef.png" alt="20L Jerry Can" class="packaging-img">
+              <div class="packaging-info">
+                <h4>Plastic Jerry Can</h4>
+                <p>Capacity: 20 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- 1000 L IBC on Plastic Pallet
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/5ltrcandef.png" alt="1000L Plastic IBC" class="packaging-img">
+              <div class="packaging-info">
+                <h4>IBC on Plastic Pallet</h4>
+                <p>Capacity: 1000 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div> -->
+        
+            <!-- 1000 L IBC on Wooden Pallet -->
+            <!-- <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/1000L-wooden-ibc.jpg" alt="1000L Wooden IBC" class="packaging-img">
+              <div class="packaging-info">
+                <h4>IBC on Wooden Pallet</h4>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div> -->
+        
+            <!-- 210 L Disposable Drum -->
+            <div class="packaging-card uk-card uk-card-default uk-card-body">
+              <img src="assets/img/new/220ltrcandef.png" alt="210L Disposable Drum" class="packaging-img">
+              <div class="packaging-info">
+                <h4>Disposable Drum</h4>
+                <p>Capacity: 210 L</p>
+                <ul class="capacity-options">
+                  <li>500 L</li>
+                  <li>750 L</li>
+                  <li>1000 L</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div id="technicalDataSheetModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Request Technical Data Sheet / MSDS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="technicalDataForm">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="sendWhatsApp">Send</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <div id="whatsapp-button">
+    <a href="https://wa.me/919061190260?text=Hello,%20I%20would%20like%20to%20connect%20with%20you!" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+</main>
+
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <div class="uk-container">
+          <div class="uk-grid uk-grid-small uk-child-width-1-4@l uk-child-width-1-2@s" data-uk-grid>
+            <div>
+              <div class="uk-margin-medium">
+                <div class="logo"><a class="logo__link" href="index.html">
+                    <div class="logo__icon"><img src="assets/img/brands/logo.png" alt="Autozolv"></div>
+                  </a></div>
+              </div>
+              <div class="uk-margin-medium">
+                <div class="support">
+                  <a class="support__link" href="tel:13004905008">
+                    <div class="support__icon"><i class="fas fa-headset"></i></div>
+                    <div class="support__desc">
+                      <div class="support__label">Talk with our support</div>
+                      <div class="support__phone">
+                        <span><strong>+91</strong> 90611 90260</span>
+                        <span><strong>+91</strong> 73585 93777</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="uk-margin-medium">
+                <div class="social">
+                  <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-youtube"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="page-footer__column page-footer__menu">
+                <div class="uk-h4">About Autozolv</div>
+                <ul class="list-decor">
+                  <li> <a href="about.html">Our Company</a></li>
+                  <li> <a href="faq.html">Frequently Asked Questions</a></li>
+                
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="page-footer__column page-footer__menu">
+                <div class="uk-h4">Franchise</div>
+                <ul class="list-decor">
+                  <li> <a href="franchise.html">More About Franchise</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="page-footer__column page-footer__menu">
+                <div class="uk-h4">Contact Us</div>
+                <ul class="list-decor">
+                  <li> <a href="page-contacts.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="uk-container">
+          <div class="uk-text-center">
+            (c) 2024 <strong>Autozolv</strong> - Developed by <strong>Velvetek Systems</strong>. All rights reserved.
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true; mode: push">
+        <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+          <div class="uk-margin">
+            <div class="logo"><a class="logo__link" href="index.html">
+                <div class="logo__icon"><img src="assets/img/brands/logo.png" alt="Autozolv"></div>
+          
+              </a></div>
+          </div>
+          <div class="uk-margin">
+              
+              
+            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+              <li class="uk-parent"><a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li class="uk-parent"><a href="#">products</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="def.html">Diesel Exhaust Fluid </a></li>
+                  <li><a href="page-shop-grid.html">product list</a></li>
+                  <li><a href="#">AutoCare</a></li>
+                  <li><a href="#">lubricants</a></li>
+                </ul>
+              </li>
+              <li class="uk-parent"><a href="#">Franchises</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="franchise.html">Franchises</a></li>
+                  <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+              </li>
+              <li><a href="page-contacts.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="uk-margin-auto-top">
+            <div class="support">
+                  <a class="support__link" href="tel:13004905008">
+                    <div class="support__icon"><i class="fas fa-headset"></i></div>
+                    <div class="support__desc">
+                      <div class="support__label">Talk with our support</div>
+                      <div class="support__phone">
+                        <span><strong>+91</strong> 90611 90260</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-modal-full uk-modal" id="modal-search" data-uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport><button class="uk-modal-close-full" type="button" data-uk-close></button>
+          <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
+        </div>
+      </div><!-- End Дополнительные блоки-->
+    </footer>
+      
+  </div>
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="contact-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-container" style="padding-bottom: 20px;">
+                    <h3  style="color: red;" class="column-title">We love to hear</h3>
+                    <form id="submit-form" action="" method="post" role="form">
+                      <div class="error-container"></div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label  style="color: black;" for="name">Name</label>
+                            <input class="form-control form-control-name" name="name" id="name" placeholder="Your Name" type="text" required>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label  style="color: black;" for="email">Email</label>
+                            <input class="form-control form-control-email" name="email" id="email" placeholder="Your Email" type="email" required>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label  style="color: black;" for="subject">Subject</label>
+                            <input class="form-control form-control-subject" name="subject" id="subject" placeholder="Subject" type="text" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label   style="color: black;"for="message">Message</label>
+                        <textarea class="form-control form-control-message" name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                      </div>
+                      <div class="text-right">
+                        <br>
+                        <button class="uk-button uk-button-danger" type="submit">Send Message</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll('.tab-item');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          const targetTab = this.getAttribute('data-tab');
+      
+          // Remove 'active' class from all tabs and panels
+          tabs.forEach(t => t.classList.remove('active'));
+          tabPanels.forEach(panel => panel.classList.remove('active'));
+      
+          // Add 'active' class to the clicked tab and corresponding panel
+          this.classList.add('active');
+          document.querySelector(`.${targetTab}`).classList.add('active');
+        });
+      });
+    });
+  </script>
+  
+  <script>
+    document.getElementById("sendWhatsApp").addEventListener("click", function () {
+        const name = document.getElementById("name").value;
+        const phone = document.getElementById("phone").value;
+        const documentUrl = "https://css4.pub/2015/icelandic/dictionary.pdf"; // Replace with the document URL
+        const fileName = "adblue%"; // Replace with your document's filename
+
+        if (!name || !phone) {
+            alert("Please fill out all fields.");
+            return;
+        }
+
+        // API Call to your backend
+        fetch("https://apiwhatsdoc.onrender.com/send-document", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, phone, documentUrl, fileName }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.error) {
+                    console.error("Error:", data.error);
+                    alert("Failed to send message. Check the console for details.");
+                } else {
+                    alert("Message sent successfully!");
+                    console.log("Success:", data);
+                    location.reload(); // Reload the page after success
+                }
+            })
+            .catch((error) => {
+                console.error("Fetch error:", error);
+                alert("An error occurred while sending the message.");
+            });
+    });
+</script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Bootstrap's JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script>
+          $("#submit-form").submit((e)=>{
+              e.preventDefault()
+              $.ajax({
+                  url:"https://script.google.com/macros/s/AKfycbydf8w4i2yJWruLoqTnoHoLPX0ijNwSqb7xbiTBEvLqgpV-fZHNAOmHPef7d2OuCTdE/exec ",
+                  data:$("#submit-form").serialize(),
+                  method:"post",
+                  success:function (response){
+                      alert("Message Sent successfully")
+                      window.location.reload()
+                      //window.location.href="https://google.com"
+                  },
+                  error:function (err){
+                      alert("Something Error")
+        
+                  }
+              })
+          })
+        </script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/uikit.min.js"></script>
+  <script src="assets/js/uikit-icons.min.js"></script>
+  <script src="assets/js/fontawesome.all.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/ion.rangeSlider.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

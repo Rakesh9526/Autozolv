@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shop - Grid view</title>
+  <meta content="Templines" name="author">
+  <meta content="Autozolv" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/uikit.min.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-shop">
+
+    
+  <div class="page-wrapper">
+    <header class="page-header page-header-transparent">
+      <div class="page-header__inner">
+        <div class="page-header__left">
+          <div class="logo"><a class="logo__link" href="index.html">
+              <div class="logo__icon"><img style="height: 55px;" src="assets/img/brands/logo.png" alt="Autozolv"></div>
+            </a></div>
+        </div>
+        <div class="page-header__center">
+          <nav class="page-nav" data-uk-navbar>
+            <ul class="uk-navbar-nav">
+              <li><a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+                    <li><a href="page-shop-grid.html">products</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="def.html">Diesel Exhaust Fluid </a></li>
+
+
+                    <li><a href="#">AutoCare</a></li>
+                    <li><a href="#">lubricants</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Franchises</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="franchise.html">Franchises</a>
+                      <li><a href="faq.html">Frequently Asked Questions</a></li>
+                  </ul>
+                </div>
+              </li>     
+              <li><a href="page-contacts.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__right">
+          </a><a class="uk-navbar-toggle menu-btn" href="#offcanvas" data-uk-toggle><img src="assets/img/icons/menu.svg" alt="menu"></a></div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="section-hero">
+        <div class="section-hero__bg" style="background-image: url(assets/img/bg/shop.jpg)">
+          <div class="uk-container">
+            <div class="section-hero__content">
+              <div class="section-hero__title"> <span>Welcome</span>
+                <div class="uk-h1">To product</div>
+              </div>
+              <div class="section-hero__breadcrumb">
+                <ul class="uk-breadcrumb">
+                  <li><a href="/index.html">Home</a></li>
+                  <li><span>product List</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="uk-section-large uk-container">
+          <div class="uk-grid" data-uk-grid>
+            <div class="uk-width-1-3@m">
+              <div class="js-filter-more filter-more">
+                <div class="filter-more__desc">
+                  <div class="uk-h4">product options</div>
+                </div>
+                <div class="filter-more__icon"><img src="assets/img/brands/logo.png" alt="logo"></div>
+              </div>
+              <aside class="sidebar js-filter-content">
+                <div class="widjet widjet--filters">
+                  <div class="widjet__content">
+                    <div class="uk-grid uk-grid-small uk-child-width-1-1" data-uk-grid>
+
+                      
+                      <!-- Enquiry Now button -->
+                      <div style="padding-left: 86px;">
+                        <a href="#" class="uk-button uk-button-danger" data-toggle="modal" data-target="#contactModal">
+                          Enquiry Now
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+              
+              <!-- Add this CSS to style the buttons -->
+              <style>
+                /* Custom button styles */
+                .custom-button {
+                  background-color: transparent; /* Transparent background */
+                  border: 2px solid red; /* Red border */
+                  color: red; /* Red text */
+                  font-size: 16px; /* Adjust font size if needed */
+                  padding: 10px 20px; /* Adjust padding */
+                  width: 100%; /* Make the buttons full-width */
+                  text-align: center; /* Center text */
+                  cursor: pointer; /* Pointer cursor on hover */
+                }
+              
+                /* Remove hover effects */
+                .custom-button:hover {
+                  background-color: transparent; /* No background on hover */
+                  color: red; /* Keep text red */
+                  border: 2px solid red; /* Keep red border */
+                }
+              
+                /* Optional: Add padding for the "Enquiry Now" button */
+                .uk-button-danger {
+                  padding: 1px 20px;
+                }
+              </style>
+              
+              
+            </div>
+            <div class="uk-width-2-3@m">
+              <div class="sorting">
+                <div class="sorting-left">
+                  <div class="result-count">Your search returned <span>35</span> results.</div>
+                </div>
+                <div class="sorting-right"> <select class="uk-select" name="orderby">
+                    <option value="popularity">Sort by popularity</option>
+                    <option value="rating">Sort by average rating</option>
+                    <option value="date" selected>Sort by newness</option>
+                    <option value="price">Sort by price: low to high</option>
+                    <option value="price-desc">Sort by price: high to low</option>
+                  </select><button class="sorting-btn btn-list" type="button"> <img src="assets/img/icons/list.svg" alt="list" data-uk-svg></button><button class="sorting-btn btn-grid is-active" type="button"> <img src="assets/img/icons/grid.svg" alt="grid" data-uk-svg></button></div>
+              </div>
+              <div class="products-items uk-grid uk-child-width-1-2@s" data-uk-grid>
+                <div>
+                  <div class="product-item uk-transition-toggle">
+                    <div class="product-item__head">
+                      <div>
+                        <div class="product-item__name"><a href="def.html">Def</a></div>
+                      </div>
+                    </div>
+                    <div class="product-item__media uk-inline-clip uk-inline">
+                      <img src="assets/img/new/20ltrbucket.png" alt="AdBlue DEF Fluid" />
+                      <a class="uk-transition-fade" href="def.html">
+                        <div class="uk-overlay-cover uk-overlay-primary"></div>
+                        <div class="uk-position-center"><span class="icon-cross"></span></div>
+                      </a>
+                      <button class="product-item__whish btn-whish"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-item__info">
+                      <ul class="list-info">
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Eco</div>
+                          <div class="list-info-item__value">Clean</div>
+                        </li>
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Certified</div>
+                          <div class="list-info-item__value">ISO</div>
+                        </li>
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Track</div>
+                          <div class="list-info-item__value">Live</div>
+                        </li>
+                      </ul>
+                    </div>                    
+                    <div class="product-item__specifications">
+                      <ul class="specifications-list">
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-1.png" alt="Environmental Benefits" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Reduces Smog</div>
+                            <div class="specifications-list-item__value">Protects air quality</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-2.png" alt="Performance" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Enhanced Performance</div>
+                            <div class="specifications-list-item__value">Optimizes fuel usage</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-3.png" alt="Monitoring" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Never Run Out</div>
+                            <div class="specifications-list-item__value">Smart alerts</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-4.png" alt="SCR Systems" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">SCR Compatible</div>
+                            <div class="specifications-list-item__value">For diesel engines</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                <div>
+                  <div class="product-item uk-transition-toggle">
+                    <div class="product-item__head">
+                      <div>
+                        <div class="product-item__name"><a href="AUS4O.html">Aus40%</a></div>
+                      </div>
+                    </div>
+                    <div class="product-item__media uk-inline-clip uk-inline">
+                      <img src="assets/img/new/20ltrcandef.png" alt="AUS40 Product Image" />
+                      <a class="uk-transition-fade" href="AUS4O.html">
+                        <div class="uk-overlay-cover uk-overlay-primary"></div>
+                        <div class="uk-position-center"><span class="icon-cross"></span></div>
+                      </a>
+                      <button class="product-item__whish btn-whish"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-item__info">
+                      <ul class="list-info">
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Proven</div>
+                          <div class="list-info-item__value">Reliable</div>
+                        </li>
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Clean</div>
+                          <div class="list-info-item__value">Safe</div>
+                        </li>
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Verified</div>
+                          <div class="list-info-item__value">Trusted</div>
+                        </li>
+                      </ul>
+                    </div>
+                                        
+                    <div class="product-item__specifications">
+                      <ul class="specifications-list">
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon">
+                            <img src="assets/img/icons/specifications-1.png" alt="Composition Icon" />
+                          </div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Composition</div>
+                            <div class="specifications-list-item__value">Urea 40%, Water 60%</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon">
+                            <img src="assets/img/icons/specifications-2.png" alt="Applications Icon" />
+                          </div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Applications</div>
+                            <div class="specifications-list-item__value">Marine, Land</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon">
+                            <img src="assets/img/icons/specifications-3.png" alt="Compliance Icon" />
+                          </div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Compliance</div>
+                            <div class="specifications-list-item__value">ISO 22241</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon">
+                            <img src="assets/img/icons/specifications-4.png" alt="Efficiency Icon" />
+                          </div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Efficiency</div>
+                            <div class="specifications-list-item__value">Reduced NOx</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>                  
+                </div>
+                <div>
+                  <div class="product-item uk-transition-toggle">
+                    <div class="product-item__head">
+                      <div>
+                        <div class="product-item__name"> <a href="AUS50.html">Aus50%</a></div>
+                      </div>
+                    </div>
+                    <div class="product-item__media uk-inline-clip uk-inline">
+                      <img src="assets/img/new/5ltrcandef.png" alt="BMW S1000 RX" />
+                      <a class="uk-transition-fade" href="AUS50.html">
+                        <div class="uk-overlay-cover uk-overlay-primary"></div>
+                        <div class="uk-position-center"><span class="icon-cross"></span></div>
+                      </a>
+                      <button class="product-item__whish btn-whish"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-item__info">
+                      <ul class="list-info">
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Purity</div>
+                          <div class="list-info-item__value">50% Urea Solution</div>
+                        </li>
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Primary Use</div>
+                          <div class="list-info-item__value">Efficient NOx Scrubbing</div>
+                        </li>
+                        <li class="list-info-item">
+                          <div class="list-info-item__title">Storage Method</div>
+                          <div class="list-info-item__value">Space-Efficient Tanks</div>
+                        </li>
+                      </ul>
+                    </div>                    
+                    <div class="product-item__specifications">
+                      <ul class="specifications-list">
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-1.png" alt="Composition" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Composition</div>
+                            <div class="specifications-list-item__value">Urea 40%, Water 60%</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-2.png" alt="Applications" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Applications</div>
+                            <div class="specifications-list-item__value">Marine, Land</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-3.png" alt="Efficiency" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Efficiency</div>
+                            <div class="specifications-list-item__value">Reduced NOx</div>
+                          </div>
+                        </li>
+                        <li class="specifications-list-item">
+                          <div class="specifications-list-item__icon"><img src="assets/img/icons/specifications-4.png" alt="Temperature" /></div>
+                          <div class="specifications-list-item__desc">
+                            <div class="specifications-list-item__title">Temperature</div>
+                            <div class="specifications-list-item__value">64°F (18°C)</div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <div id="whatsapp-button">
+    <a href="https://wa.me/919061190260?text=Hello,%20I%20would%20like%20to%20connect%20with%20you!" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+</main>
+      <div class="call-to-action classic">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-center text-md-left">
+            <div class="call-to-action-text">
+              <h3 style="color: white;" class="action-title">Interested with this service.</h3>
+            </div>
+          </div>
+          <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
+            <div class="call-to-action-btn">
+              <a href="#" class="uk-button uk-button-danger" data-toggle="modal" data-target="#contactModal">Enquiry Now</a>
+            </div>
+          </div>
+        </div>
+      </div>   
+  <br>
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <div class="uk-container">
+          <div class="uk-grid uk-grid-small uk-child-width-1-4@l uk-child-width-1-2@s" data-uk-grid>
+            <div>
+              <div class="uk-margin-medium">
+                <div class="logo"><a class="logo__link" href="index.html">
+                    <div class="logo__icon"><img src="assets/img/brands/logo.png" alt="Autozolv"></div>
+                  </a></div>
+              </div>
+              <div class="uk-margin-medium">
+                <div class="support">
+                  <div class="support__link">
+                    <div class="support__icon"><i class="fas fa-headset"></i></div>
+                    <div class="support__desc">
+                      <div class="support__label">Talk with our support</div>
+                      <div class="support__phone">
+                        <a style="color: white;" href="tel:+919061190260"><span><strong>+91</strong> 90611 90260</span></a>
+                        <br>
+                        <a style="color: white;"  href="tel:+917358593777"><span><strong>+91</strong> 73585 93777</span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+              
+              <div class="uk-margin-medium">
+                <div class="social">
+                  <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-youtube"></i></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="page-footer__column page-footer__menu">
+                <div class="uk-h4">About Autozolv</div>
+                <ul class="list-decor">
+                  <li> <a href="about.html">Our Company</a></li>
+                  <li> <a href="faq.html">Frequently Asked Questions</a></li>
+                
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="page-footer__column page-footer__menu">
+                <div class="uk-h4">Franchise</div>
+                <ul class="list-decor">
+                  <li> <a href="franchise.html">More About Franchise</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="page-footer__column page-footer__menu">
+                <div class="uk-h4">Contact Us</div>
+                <ul class="list-decor">
+                  <li> <a href="page-contacts.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__bottom">
+        <div class="uk-container">
+          <div class="uk-text-center">
+            (c) 2024 <strong>Autozolv</strong> - Developed by <strong>Velvetek Systems</strong>. All rights reserved.
+          </div>
+        </div>
+      </div>
+      <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true; mode: push">
+        <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+          <div class="uk-margin">
+            <div class="logo"><a class="logo__link" href="index.html">
+                <div class="logo__icon"><img src="assets/img/brands/logo.png" alt="Autozolv"></div>
+          
+              </a></div>
+          </div>
+          <div class="uk-margin">
+              
+              
+            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+              <li class="uk-parent"><a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About</a></li>
+              <li class="uk-parent"><a href="#">products</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="def.html">Diesel Exhaust Fluid </a></li>
+                  <li><a href="page-shop-grid.html">product list</a></li>
+                  <li><a href="#">AutoCare</a></li>
+                  <li><a href="#">lubricants</a></li>
+                </ul>
+              </li>
+              <li class="uk-parent"><a href="#">Franchises</a>
+                <ul class="uk-nav-sub">
+                  <li><a href="franchise.html">Franchises</a></li>
+                  <li><a href="faq.html">Frequently Asked Questions</a></li>
+                </ul>
+              </li>
+              <li><a href="page-contacts.html">Contact</a></li>
+            </ul>
+          </div>
+         
+          <div class="uk-margin-auto-top">
+            <div class="support">
+                  <a class="support__link" href="tel:+919061190260">
+                    <div class="support__icon"><i class="fas fa-headset"></i></div>
+                    <div class="support__desc">
+                      <div class="support__label">Talk with our support</div>
+                      <div class="support__phone">
+                        <span><strong>+91</strong> 90611 90260</span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-modal-full uk-modal" id="modal-search" data-uk-modal>
+        <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport><button class="uk-modal-close-full" type="button" data-uk-close></button>
+          <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
+        </div>
+      </div><!-- End Дополнительные блоки-->
+    </footer>
+      
+  </div>
+
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <section class="contact-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-container" style="padding-bottom: 20px;">
+                        <h3  style="color: red;" class="column-title">We love to hear</h3>
+                        <form id="submit-form" action="" method="post" role="form">
+                          <div class="error-container"></div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label  style="color: black;" for="name">Name</label>
+                                <input class="form-control form-control-name" name="name" id="name" placeholder="Your Name" type="text" required>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label  style="color: black;" for="email">Email</label>
+                                <input class="form-control form-control-email" name="email" id="email" placeholder="Your Email" type="email" required>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label  style="color: black;" for="subject">Subject</label>
+                                <input class="form-control form-control-subject" name="subject" id="subject" placeholder="Subject" type="text" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label   style="color: black;"for="message">Message</label>
+                            <textarea class="form-control form-control-message" name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                          </div>
+                          <div class="text-right">
+                            <br>
+                            <button class="uk-button uk-button-danger" type="submit">Send Message</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <section class="contact-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-container" style="padding-bottom: 20px;">
+                        <h3  style="color: red;" class="column-title">We love to hear</h3>
+                        <form id="submit-form" action="" method="post" role="form">
+                          <div class="error-container"></div>
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label  style="color: black;" for="name">Name</label>
+                                <input class="form-control form-control-name" name="name" id="name" placeholder="Your Name" type="text" required>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label  style="color: black;" for="email">Email</label>
+                                <input class="form-control form-control-email" name="email" id="email" placeholder="Your Email" type="email" required>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <label  style="color: black;" for="subject">Subject</label>
+                                <input class="form-control form-control-subject" name="subject" id="subject" placeholder="Subject" type="text" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label   style="color: black;"for="message">Message</label>
+                            <textarea class="form-control form-control-message" name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                          </div>
+                          <div class="text-right">
+                            <br>
+                            <button class="uk-button uk-button-danger" type="submit">Send Message</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>  
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!-- Bootstrap's JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <script>
+              $("#submit-form").submit((e)=>{
+                  e.preventDefault()
+                  $.ajax({
+                      url:"https://script.google.com/macros/s/AKfycbydf8w4i2yJWruLoqTnoHoLPX0ijNwSqb7xbiTBEvLqgpV-fZHNAOmHPef7d2OuCTdE/exec ",
+                      data:$("#submit-form").serialize(),
+                      method:"post",
+                      success:function (response){
+                          alert("Message Sent successfully")
+                          window.location.reload()
+                          //window.location.href="https://google.com"
+                      },
+                      error:function (err){
+                          alert("Something Error")
+            
+                      }
+                  })
+              })
+            </script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/uikit.min.js"></script>
+  <script src="assets/js/uikit-icons.min.js"></script>
+  <script src="assets/js/fontawesome.all.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/ion.rangeSlider.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

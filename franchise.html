@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shop - Grid view</title>
+    <meta content="Templines" name="author">
+    <meta content="Autozolv" name="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  
+  <style>
+
+
+/* General Section */
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-content-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;  /* Allow wrapping on small screens */
+}
+
+.section-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-card:hover {
+  transform: translateY(-10px);
+}
+
+.section-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.section-card h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.section-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.last-card {
+  margin: 0 auto;
+  width: 300px; /* Match the other cards' size */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .section-card {
+    width: 45%; /* Two cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-card {
+    width: 100%; /* One card per row on mobile devices */
+    margin-bottom: 20px; /* Space between cards */
+  }
+
+  section h2 {
+    font-size: 28px; /* Smaller heading on mobile */
+  }
+
+  .section-content-group {
+    justify-content: center; /* Center the content for smaller screens */
+  }
+
+  .last-card {
+    width: 100%; /* Ensure the last card is full-width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 24px; /* Even smaller heading on very small screens */
+  }
+
+  .cta-button {
+    width: 100%; /* Make the button full width on mobile */
+    padding: 15px 0; /* Increase the height for better touchability */
+  }
+}
+/* General Styling */
+hr.uk-margin-medium {
+  margin: 20px 0;
+}
+
+h2, h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container and Flexbox Setup */
+.benefits-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.benefits-column {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px; /* Prevents the columns from getting too small */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .benefits-column {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-container {
+    flex-direction: column; /* Stacks the columns on smaller screens */
+    align-items: center; /* Centers the content */
+  }
+
+  .benefits-column {
+    width: 100%; /* Ensure columns take full width in stack */
+    padding: 15px;
+  }
+
+  h2, h3 {
+    font-size: 20px; /* Smaller headings on mobile */
+  }
+
+  ul li {
+    font-size: 14px; /* Smaller text for list items */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px; /* Even smaller heading on very small screens */
+  }
+
+  h3 {
+    font-size: 16px; /* Smaller subheadings */
+  }
+
+  ul li {
+    font-size: 12px; /* Even smaller text for better readability */
+  }
+}
+
+
+  </style>
+
+
+<body class="page-home">
+ 
+    
+  <div class="page-wrapper">
+    <header class="page-header page-header-transparent">
+      <div class="page-header__inner">
+        <div class="page-header__left">
+          <div class="logo"><a class="logo__link" href="index.html">
+              <div class="logo__icon"><img style="height: 55px;" src="assets/img/brands/logo.png" alt="Autozolv"></div>
+            </a></div>
+        </div>
+        <div class="page-header__center">
+          <nav class="page-nav" data-uk-navbar>
+            <ul class="uk-navbar-nav">
+              <li><a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+                    <li><a href="page-shop-grid.html">products</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="def.html">Diesel Exhaust Fluid </a></li>
+
+
+                    <li><a href="#">AutoCare</a></li>
+                    <li><a href="#">lubricants</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Franchises</a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="franchise.html">Franchises</a>
+                      <li><a href="faq.html">Frequently Asked Questions</a></li>
+                  </ul>
+                </div>
+              </li>     
+              <li><a href="page-contacts.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__right">
+          </a><a class="uk-navbar-toggle menu-btn" href="#offcanvas" data-uk-toggle><img src="assets/img/icons/menu.svg" alt="menu"></a></div>
+      </div>
+    </header>
+    <main class="page-main">
+        <div class="section-hero">
+            <div data-uk-slideshow="autoplay: true; min-height: 560; max-height: 950; animation: fade">
+              <div class="uk-position-relative" tabindex="-1">
+                <ul class="uk-slideshow-items">
+                  <li class="slideshow-item"><img src="assets/img/new/team/coverfrnshiceimg.png" alt data-uk-cover>
+                    <div class="uk-position-center uk-position-small">
+                      <div class="uk-container">
+                        <div class="uk-grid" data-uk-grid>
+                          <div class="uk-width-3-5@m">
+                            <div class="slideshow-item__content">
+                              <div class="slideshow-item__decor" data-uk-slideshow-parallax="opacity: 0,1">Autozolv</div>
+                              <div class="slideshow-item__title" data-uk-slideshow-parallax="x: 100,-100"><span>Taking rides to a newer level</span>
+                                <div class="uk-h2">lets clean up the environment  <br>together</div>
+                              </div>
+                              <div class="slideshow-item__desc" data-uk-slideshow-parallax="x: 200,-200">
+                              </div>
+                              <div class="slideshow-item__btns" data-uk-slideshow-parallax="x: 300,-300"><a class="uk-button uk-button-danger" href="about.html">Learn more </a><a class="uk-button uk-button-secondary" href="def.html">Diesel Exhaust Fluid</a></div>
+                            </div>
+                          </div>
+                          <div class="uk-width-2-5@m uk-visible@l"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slideshow-item"><img src="assets/img/new/team/coverproductimg.png" alt data-uk-cover>
+                    <div class="uk-position-center uk-position-small">
+                      <div class="uk-container">
+                        <div class="uk-grid" data-uk-grid>
+                          <div class="uk-width-2-5@m uk-visible@l"></div>
+                          <div class="uk-width-3-5@m">
+                            <div class="slideshow-item__content">
+                              <div class="slideshow-item__decor" data-uk-slideshow-parallax="opacity: 0,1">Autozolv</div>
+                              <div class="slideshow-item__title" data-uk-slideshow-parallax="x: 100,-100"><span>Taking rides to a newer level</span>
+                                <div class="uk-h2">The Complete AutoCare<br>Now In India</div>
+                              </div>
+                              <div class="slideshow-item__desc" data-uk-slideshow-parallax="x: 200,-200">
+                               
+                              </div>
+                              <div class="slideshow-item__btns" data-uk-slideshow-parallax="x: 300,-300"><a class="uk-button uk-button-danger" href="about.html">Learn more </a><a class="uk-button uk-button-secondary" href="def.html">Diesel Exhaust Fluid</a></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- <li class="slideshow-item"><img src="assets/img/img-home-slideshow-3.jpg" alt data-uk-cover>
+                    <div class="uk-position-center uk-position-small">
+                      <div class="uk-container">
+                        <div class="uk-grid" data-uk-grid>
+                          <div class="uk-width-3-5@m">
+                            <div class="slideshow-item__content">
+                              <div class="slideshow-item__decor" data-uk-slideshow-parallax="opacity: 0,1">Autozolv</div>
+                              <div class="slideshow-item__title" data-uk-slideshow-parallax="x: 100,-100"><span>Taking rides to a newer level</span>
+                                <div class="uk-h2">modern designed<br> for a Sleek look</div>
+                              </div>
+                              <div class="slideshow-item__desc" data-uk-slideshow-parallax="x: 200,-200">
+                                <p>Consectetur adipiscing elit sed ipsum eiusmod tempor ncdidunt<br> labore et dolore magna aliqua quis ipsum suspendisse.</p>
+                              </div>
+                              <div class="slideshow-item__btns" data-uk-slideshow-parallax="x: 300,-300"><a class="uk-button uk-button-danger" href="#!">Learn more </a><a class="uk-button uk-button-secondary" href="#!">Motorcycles </a></div>
+                            </div>
+                          </div>
+                          <div class="uk-width-2-5@m uk-visible@l"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </li> -->
+                </ul>
+              </div>
+              <div class="slideshow-nav"><a href="#" data-uk-slidenav-previous data-uk-slideshow-item="previous"></a>
+                <div class="slideshow-nav__count">
+                  <ul>
+                    <li data-uk-slideshow-item="0"><span>1 </span></li>
+                    <li data-uk-slideshow-item="1"><span>2</span></li>
+                    <li data-uk-slideshow-item="2"><span>3</span></li>
+                  </ul><span>/ 3</span>
+                </div><a href="#" data-uk-slidenav-next data-uk-slideshow-item="next"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-content">
+            <div class="uk-section-large uk-container">
+              <div class="page-product">
+                <div class="uk-grid uk-flex-middle" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="page-product__title">
+                      <div class="uk-h1">Franchise Details
+                    </div><span>AUTOZOLV DEF, the best-selling international standard Diesel Exhaust Fluid (DEF) in Europe and Gulf countries, is now franchising in India. Our goal is to provide a high-profit business with low investment and quick returns. No prior experience is needed to start an AUTOZOLV DEF station franchise, making it an ideal business opportunity.!</span>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="uk-grid" data-uk-grid>
+                  <div class="uk-width-2-3@m">
+                    <div class="page-product__gallery">
+                      <div data-uk-slideshow="min-height: 300; max-height: 430">
+                        <ul class="uk-slideshow-items uk-child-width-1-1">
+                          <li><img class="uk-width-1-1" src="assets/img/img-gallery-1-big.jpg" alt="img-gallery" data-uk-cover></li>
+                          <li><img class="uk-width-1-1" src="assets/img/img-gallery-2-big.jpg" alt="img-gallery" data-uk-cover></li>
+                          <li><img class="uk-width-1-1" src="assets/img/img-gallery-3-big.jpg" alt="img-gallery" data-uk-cover></li>
+                          <li><img class="uk-width-1-1" src="assets/img/img-gallery-4-big.jpg" alt="img-gallery" data-uk-cover></li>
+                          <li><img class="uk-width-1-1" src="assets/img/img-gallery-5-big.jpg" alt="img-gallery" data-uk-cover></li>
+                        </ul>
+                        <div class="uk-margin-top" data-uk-slider>
+                          <ul class="uk-thumbnav uk-slider-items uk-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@m uk-child-width-1-5@l">
+                            <li data-uk-slideshow-item="0"><a href="#"><img src="assets/img/img-gallery-1.jpg" alt="img-gallery"></a></li>
+                            <li data-uk-slideshow-item="1"><a href="#"><img src="assets/img/img-gallery-2.jpg" alt="img-gallery"></a></li>
+                            <li data-uk-slideshow-item="2"><a href="#"><img src="assets/img/img-gallery-3.jpg" alt="img-gallery"></a></li>
+                            <li data-uk-slideshow-item="3"><a href="#"><img src="assets/img/img-gallery-4.jpg" alt="img-gallery"></a></li>
+                            <li data-uk-slideshow-item="4"><a href="#"><img src="assets/img/img-gallery-5.jpg" alt="img-gallery"></a></li>
+                          </ul>
+                        </div>
+                      </div>
+  <!-- Why Choose Us Section -->
+  <section id="why-choose-us">
+    <h2>Why Choose Our Franchise?</h2>
+    <div class="section-content">
+      <!-- Content Cards -->
+      <div class="section-content-group">
+        <div class="section-card content-card">
+          <h3>LOW INVESTMENT</h3>
+          <p>Our franchise offers an affordable entry point, making it accessible for aspiring entrepreneurs to start their journey.</p>
+        </div>
+        <div class="section-card content-card">
+          <h3>100% TURNKEY FRANCHISEE</h3>
+          <p>We provide a complete, ready-to-operate business setup with minimal hassle, ensuring a seamless start.</p>
+        </div>
+        <div class="section-card content-card">
+          <h3>MARKETING SUPPORT</h3>
+          <p>Our team offers robust marketing strategies and resources to help your franchise succeed in the market.</p>
+        </div>
+      </div>
+  
+      <!-- Blue Cards -->
+      <div class="section-content-group">
+        <div class="section-card blue-card">
+          <h3>PRODUCT TRAINING & SUPPORT</h3>
+          <p>We ensure you are well-equipped with product knowledge and continuous support to keep your business running smoothly.</p>
+        </div>
+        <div class="section-card blue-card">
+          <h3>PREMIUM QUALITY DEF FILLING STATION</h3>
+          <p>Our products meet high standards, ensuring customer satisfaction and trust in your franchise.</p>
+        </div>
+        <div class="section-card blue-card">
+          <h3>HIGH PROFITABLE BUSINESS - RETURN UP TO 30% / MONTH</h3>
+          <p>Our franchise model is designed to deliver significant profitability with high returns on investment.</p>
+        </div>
+      </div>
+  
+      <!-- Last Card -->
+      <div class="section-card blue-card last-card">
+        <h3>PROVEN BUSINESS MODEL</h3>
+        <p>Join a trusted and established system with a track record of success, reducing risks and ensuring growth opportunities.</p>
+      </div>
+    </div>
+  </section>
+  
+                    </div>
+                  </div>
+                  <div class="uk-width-1-3@m">
+                    <div class="product-block-info">
+
+                      <div class="product-block-info__email block-icon">
+                        <div class="block-icon__icon"><img src="assets/img/icons/comment.svg" alt="comment"></div>
+                        <div class="block-icon__desc">
+                          <div class="block-icon__title">Contact Via Email</div>
+                          <div class="block-icon__value"><a href="mailto:autozolvdef@gmail.com">autozolvdef@gmail.com</a></div>
+                        </div>
+                      </div>
+                      <div class="product-block-info__phone block-icon">
+                        <div class="block-icon__icon"><img src="assets/img/icons/smartphone.svg" alt="smartphone"></div>
+                        <div class="block-icon__desc">
+                          <div class="block-icon__title">Contact Via Mob</div>
+                          <div class="block-icon__value"><a href="tel:90611 90260">90611 90260</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <aside class="sidebar">
+                        <div class="widjet widjet--form">
+                          <div class="widjet__title">
+                            <div class="uk-h4">Send a message</div><span>Get in touch via message</span>
+                          </div>
+                          <div class="widjet__content">
+                            <!-- Add id to form for targeting with JS -->
+                            <form id="submit-form" action="#">
+                              <!-- Add name attributes to inputs -->
+                              <div class="uk-margin-small"><input class="uk-input uk-form-large" type="text" name="name" placeholder="Your Name"></div>
+                              <div class="uk-margin-small"><input class="uk-input uk-form-large" type="text" name="email" placeholder="Email"></div>
+                              <div class="uk-margin-small"><input class="uk-input uk-form-large" type="text" name="phone" placeholder="Phone (Optional)"></div>
+                              <div class="uk-margin-small"><textarea class="uk-textarea uk-form-large" name="message" placeholder="Message"></textarea></div>
+                              <div class="uk-margin-small uk-text-center">
+                                <button class="uk-button uk-button-danger uk-button-large" type="submit">Send message</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </aside>
+                      
+                  </div>
+                </div>
+              </div>
+              <hr class="uk-margin-medium">
+              <h2>Benefits & Applications</h2>
+              
+              <div class="benefits-container">
+                <div class="benefits-column">
+                  <h3>Benefits</h3>
+                  <ul>
+                    <li>Clear liquid that is non-toxic, non-polluting, and non-hazardous</li>
+                    <li>Reduces harmful pollution</li>
+                    <li>Eco-friendly</li>
+                    <li>Improves air quality</li>
+                    <li>Safe to handle</li>
+                    <li>Easy to store</li>
+                    <li>Improves vehicle compliance with pollution requirements</li>
+                    <li>DEF can increase your car’s miles per gallon</li>
+                    <li>DEF can enhance the engine performance</li>
+                  </ul>
+                </div>
+              
+                <div class="benefits-column">
+                  <h3>Applications</h3>
+                  <ul>
+                    <li>Commercial vehicles: Trucks, refuse trucks, fire engines, and other commercial vehicles with selective catalytic reduction (SCR) technology</li>
+                    <li>Light-goods vehicles: Vans and other light-goods vehicles with SCR technology</li>
+                    <li>Passenger vehicles: SUVs, pickups, camper vans, cars, coaches, buses, school buses, and minibuses fitted with SCR technology</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <hr class="uk-margin-medium">
+              <h3>Specifications</h3>
+              <p>DEF must meet the ISO 22241 and DIN 70070 standard to be used in diesel engines</p>
+              <hr class="uk-margin-medium">
+              
+            </div>
+          </div>       
+          <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <section class="contact-section">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-container" style="padding-bottom: 20px;">
+                            <h3  style="color: red;" class="column-title">We love to hear</h3>
+                            <form id="submit-form" action="" method="post" role="form">
+                              <div class="error-container"></div>
+                              <div class="row">
+                                <div class="col-md-4">
+                                  <div class="form-group">
+                                    <label  style="color: black;" for="name">Name</label>
+                                    <input class="form-control form-control-name" name="name" id="name" placeholder="Your Name" type="text" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="form-group">
+                                    <label  style="color: black;" for="email">Email</label>
+                                    <input class="form-control form-control-email" name="email" id="email" placeholder="Your Email" type="email" required>
+                                  </div>
+                                </div>
+                                <div class="col-md-4">
+                                  <div class="form-group">
+                                    <label  style="color: black;" for="subject">Subject</label>
+                                    <input class="form-control form-control-subject" name="subject" id="subject" placeholder="Subject" type="text" required>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label   style="color: black;"for="message">Message</label>
+                                <textarea class="form-control form-control-message" name="message" id="message" placeholder="Your Message" rows="6" required></textarea>
+                              </div>
+                              <div class="text-right">
+                                <br>
+                                <button class="uk-button uk-button-danger" type="submit">Send Message</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>  
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <!-- Bootstrap's JavaScript -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <!-- Bootstrap CSS -->
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                <script>
+                  $("#submit-form").submit((e)=>{
+                      e.preventDefault()
+                      $.ajax({
+                          url:"https://script.google.com/macros/s/AKfycbydf8w4i2yJWruLoqTnoHoLPX0ijNwSqb7xbiTBEvLqgpV-fZHNAOmHPef7d2OuCTdE/exec ",
+                          data:$("#submit-form").serialize(),
+                          method:"post",
+                          success:function (response){
+                              alert("Message Sent successfully")
+                              window.location.reload()
+                              //window.location.href="https://google.com"
+                          },
+                          error:function (err){
+                              alert("Something Error")
+                
+                          }
+                      })
+                  })
+                </script>
+        
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <div id="whatsapp-button">
+    <a href="https://wa.me/919061190260?text=Hello,%20I%20would%20like%20to%20connect%20with%20you!" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__top">
+    <div class="uk-container">
+      <div class="uk-grid uk-grid-small uk-child-width-1-4@l uk-child-width-1-2@s" data-uk-grid>
+        <div>
+          <div class="uk-margin-medium">
+            <div class="logo"><a class="logo__link" href="index.html">
+                <div class="logo__icon"><img src="assets/img/brands/logo.png" alt="Autozolv"></div>
+              </a></div>
+          </div>
+          <div class="uk-margin-medium">
+            <div class="support">
+              <div class="support__link">
+                <div class="support__icon"><i class="fas fa-headset"></i></div>
+                <div class="support__desc">
+                  <div class="support__label">Talk with our support</div>
+                  <div class="support__phone">
+                    <a style="color: white;" href="tel:+919061190260"><span><strong>+91</strong> 90611 90260</span></a>
+                    <br>
+                    <a style="color: white;"  href="tel:+917358593777"><span><strong>+91</strong> 73585 93777</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="uk-margin-medium">
+            <div class="social">
+              <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-twitter"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-google-plus-g"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-youtube"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="#!"><i class="fab fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="page-footer__column page-footer__menu">
+            <div class="uk-h4">About Autozolv</div>
+            <ul class="list-decor">
+              <li> <a href="about.html">Our Company</a></li>
+              <li> <a href="faq.html">Frequently Asked Questions</a></li>
+            
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="page-footer__column page-footer__menu">
+            <div class="uk-h4">Franchise</div>
+            <ul class="list-decor">
+              <li> <a href="franchise.html">More About Franchise</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="page-footer__column page-footer__menu">
+            <div class="uk-h4">Contact Us</div>
+            <ul class="list-decor">
+              <li> <a href="page-contacts.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer__bottom">
+    <div class="uk-container">
+      <div class="uk-text-center">
+        (c) 2024 <strong>Autozolv</strong> - Developed by <strong>Velvetek Systems</strong>. All rights reserved.
+      </div>
+    </div>
+  </div>
+  <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true; mode: push">
+    <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
+      <div class="uk-margin">
+        <div class="logo"><a class="logo__link" href="index.html">
+            <div class="logo__icon"><img src="assets/img/brands/logo.png" alt="Autozolv"></div>
+      
+          </a></div>
+      </div>
+      <div class="uk-margin">
+          
+          
+        <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+          <li class="uk-parent"><a href="index.html">Home</a>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li class="uk-parent"><a href="#">products</a>
+            <ul class="uk-nav-sub">
+              <li><a href="def.html">Diesel Exhaust Fluid </a></li>
+              <li><a href="page-shop-grid.html">product list</a></li>
+              <li><a href="#">AutoCare</a></li>
+              <li><a href="#">lubricants</a></li>
+            </ul>
+          </li>
+          <li class="uk-parent"><a href="#">Franchises</a>
+            <ul class="uk-nav-sub">
+              <li><a href="franchise.html">Franchises</a></li>
+              <li><a href="faq.html">Frequently Asked Questions</a></li>
+            </ul>
+          </li>
+          <li><a href="page-contacts.html">Contact</a></li>
+        </ul>
+      </div>
+     
+      <div class="uk-margin-auto-top">
+        <div class="support">
+              <a class="support__link" href="tel:+919061190260">
+                <div class="support__icon"><i class="fas fa-headset"></i></div>
+                <div class="support__desc">
+                  <div class="support__label">Talk with our support</div>
+                  <div class="support__phone">
+                    <span><strong>+91</strong> 90611 90260</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+      </div>
+    </div>
+  </div>
+  <div class="uk-modal-full uk-modal" id="modal-search" data-uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" data-uk-height-viewport><button class="uk-modal-close-full" type="button" data-uk-close></button>
+      <form class="uk-search uk-search-large"><input class="uk-search-input uk-text-center" type="search" placeholder="Search..." autofocus></form>
+    </div>
+  </div><!-- End Дополнительные блоки-->
+</footer>
+      
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/uikit.min.js"></script>
+  <script src="assets/js/uikit-icons.min.js"></script>
+  <script src="assets/js/fontawesome.all.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/ion.rangeSlider.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
