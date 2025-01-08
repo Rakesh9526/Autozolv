@@ -22,9 +22,10 @@
 - COMPONENTS
 - FOOTER
 -------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans&display=swap');
 
 
-@font-face {
+/* @font-face {
   
   src: url("../fonts/Montserrat-Thin.ttf") format("truetype"), url("../fonts/Montserrat-Thin.ttf") format("truetype");
   font-family: "Montserrat";
@@ -70,7 +71,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-}
+} */
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -85,7 +86,7 @@ html,
 }
 
 body {
-  font: normal 400 16px/1.75 Oxygen;
+  font: normal 400 16px/1.75  Montserrat, sans-serif;
   color: #777777;
 }
 
@@ -106,14 +107,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Oswald, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:  Montserrat, sans-serif;
   font-weight: 700;
 }
 
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
 .uk-navbar-toggle {
-  font-family: Oswald, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:  Montserrat, sans-serif;
 }
 
 body {
@@ -184,7 +185,7 @@ a:hover {
 }
 
 .uk-button {
-  font: normal 500 18px/3.06 Oswald;
+  font: normal 500 18px/3.06  Montserrat, sans-serif;;
   position: relative;
   height: 57px;
   border-radius: 3px;
@@ -262,7 +263,7 @@ a:hover {
 }
 
 .uk-slideshow .slideshow-nav__count {
-  font: normal 500 18px/1.1 Oswald;
+  font: normal 500 18px/1.1  Montserrat, sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   display: -webkit-box;
@@ -345,7 +346,7 @@ a:hover {
 }
 
 .slider-nav__count {
-  font: normal 500 18px/1.1 Oswald;
+  font: normal 500 18px/1.1  Montserrat, sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   display: -webkit-box;
@@ -416,7 +417,7 @@ a:hover {
 }
 
 .uk-input {
-  font: normal 400 16px/3.56 Oxygen;
+  font: normal 400 16px/3.56  Montserrat, sans-serif;
   background: #ffffff;
   height: 57px;
   padding-left: 25px;
@@ -425,57 +426,57 @@ a:hover {
 }
 
 .uk-input::-webkit-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-input::-moz-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-input:-ms-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-input::-ms-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-input::placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-select {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #222222;
 }
 
 .uk-select::-webkit-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-select::-moz-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-select:-ms-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-select::-ms-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
 .uk-select::placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #888888;
 }
 
@@ -496,31 +497,31 @@ a:hover {
 
 .uk-input::-webkit-input-placeholder,
 .uk-textarea::-webkit-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #777777;
 }
 
 .uk-input::-moz-placeholder,
 .uk-textarea::-moz-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #777777;
 }
 
 .uk-input:-ms-input-placeholder,
 .uk-textarea:-ms-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #777777;
 }
 
 .uk-input::-ms-input-placeholder,
 .uk-textarea::-ms-input-placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #777777;
 }
 
 .uk-input::placeholder,
 .uk-textarea::placeholder {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   color: #777777;
 }
 
@@ -558,7 +559,7 @@ a:hover {
 }
 
 .uk-pagination > * > * {
-  font: normal 500 18px/1.3 Oswald;
+  font: normal 500 18px/1.3  Montserrat, sans-serif;
   padding: 2px 10px;
   color: #777777;
   text-transform: uppercase;
@@ -617,7 +618,7 @@ a:hover {
 }
 
 .section-title span {
-  font: normal 700 18px/normal Oswald;
+  font: normal 700 18px/normal  Montserrat, sans-serif;
   display: block;
   margin-bottom: 10px;
   color: #e63619;
@@ -658,7 +659,7 @@ a:hover {
 }
 
 .logo__text {
-  font: normal 700 24px/1 Oswald;
+  font: normal 700 24px/1  Montserrat, sans-serif;
   margin-top: 5px;
   color: #ffffff;
   text-transform: uppercase;
@@ -718,7 +719,7 @@ a:hover {
 }
 
 .support__phone {
-  font: normal 500 22px/1.71 Oswald;
+  font: normal 500 22px/1.71  Montserrat, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -806,7 +807,7 @@ a:hover {
 }
 
 .list-decor > li > a {
-  font: normal 400 16px/1.1 Oxygen;
+  font: normal 400 16px/1.1  Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   color: rgba(255, 255, 255, 0.7);
@@ -862,7 +863,7 @@ a:hover {
 }
 
 .latest-news-item__title {
-  font: normal 400 18px/1.33 Oswald;
+  font: normal 400 18px/1.33  Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   display: block;
@@ -879,7 +880,7 @@ a:hover {
 }
 
 .latest-news-item__date {
-  font: normal 400 13px/normal Oxygen;
+  font: normal 400 13px/normal Montserrat, sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -894,13 +895,13 @@ a:hover {
 }
 
 .info-list-item__title {
-  font: normal 400 16px/1.88 Oswald;
+  font: normal 400 16px/1.88  Montserrat, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .info-list-item__value {
-  font: normal 400 16px/1.5 Oxygen;
+  font: normal 400 16px/1.5  Montserrat, sans-serif;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -934,7 +935,7 @@ a:hover {
 }
 
 .block-icon__title {
-  font: normal 500 22px Oswald;
+  font: normal 500 22px  Montserrat, sans-serif;
   margin-bottom: 10px;
   color: #222222;
 }
@@ -981,14 +982,14 @@ a:hover {
 }
 
 .widjet__title .uk-h4 {
-  font: normal 500 22px/1.1 Oswald;
+  font: normal 500 22px/1.1  Montserrat, sans-serif;
   margin: 0;
   color: #222222;
   text-transform: uppercase;
 }
 
 .widjet__title span {
-  font: normal 300 12px/1.1 Oswald;
+  font: normal 300 12px/1.1  Montserrat, sans-serif;
   color: #666666;
   text-transform: uppercase;
 }
@@ -1014,7 +1015,7 @@ a:hover {
 }
 
 .categories-item__link {
-  font: normal 400 16px/1.75 Oxygen;
+  font: normal 400 16px/1.75  Montserrat, sans-serif;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-box-align: center;
@@ -1100,7 +1101,7 @@ a:hover {
 }
 
 .tags-cloud li a {
-  font: normal 400 14px/3.14 Oxygen;
+  font: normal 400 14px/3.14  Montserrat, sans-serif;
   background: #f8f8f8;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1158,24 +1159,24 @@ a:hover {
 }
 
 .latest-motorcycles__title {
-  font: normal 500 24px/1.1 Oswald;
+  font: normal 500 24px/1.1  Montserrat, sans-serif;
   margin-bottom: 5px;
   color: #111111;
 }
 
 .latest-motorcycles__title a {
-  font: normal 500 24px/1.1 Oswald;
+  font: normal 500 24px/1.1  Montserrat, sans-serif;
   color: #111111;
 }
 
 .latest-motorcycles__price {
-  font: normal 500 24px/1.1 Oswald;
+  font: normal 500 24px/1.1  Montserrat, sans-serif;
   margin-bottom: 15px;
   color: #e63619;
 }
 
 .latest-motorcycles__info {
-  font: normal 400 14px/1.2 Oxygen;
+  font: normal 400 14px/1.2  Montserrat, sans-serif;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-box-align: center;
@@ -1195,7 +1196,7 @@ a:hover {
 }
 
 blockquote {
-  font: normal 400 26px/1.38 Oswald;
+  font: normal 400 26px/1.38  Montserrat, sans-serif;
   background: url(../img/icons/quotes.svg) no-repeat left 20px top 20px;
   padding-top: 40px;
   padding-bottom: 10px;
@@ -1207,7 +1208,7 @@ blockquote {
 }
 
 blockquote span {
-  font: normal 500 16px/normal Oswald;
+  font: normal 500 16px/normal  Montserrat, sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   display: -webkit-box;
@@ -1415,7 +1416,7 @@ blockquote span::before {
 }
 
 .page-footer__top .uk-h4 {
-  font: normal 500 22px Oswald;
+  font: normal 500 22px  Montserrat, sans-serif;
   padding-right:67px;
   margin-bottom: 35px;
   color: #ffffff;
@@ -1629,7 +1630,7 @@ blockquote span::before {
 }
 
 .checkbox-custome span {
-  font: 400 18px/normal Lato;
+  font: 400 18px/normal  Montserrat, sans-serif;
   display: inline-block;
   color: black;
   vertical-align: middle;
@@ -1776,7 +1777,7 @@ blockquote span::before {
 }
 
 .slideshow-item__decor {
-  font: 700 200px/1 Oswald;
+  font: 700 200px/1  Montserrat, sans-serif;
   -webkit-transform: translateX(-70%);
   -ms-transform: translateX(-70%);
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
@@ -1794,21 +1795,21 @@ blockquote span::before {
 }
 
 .slideshow-item__title span {
-  font: normal 600 18px/normal Oswald;
+  font: normal 600 18px/normal  Montserrat, sans-serif;
   color: #e63619;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
 }
 
 .slideshow-item__title .uk-h2 {
-  font: normal 600 70px/1.14 Oswald;
+  font: normal 600 70px/1.14 Montserrat;
   margin: 0;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .slideshow-item__desc {
-  font: normal 300 22px/1.55 Oxygen;
+  font: normal 300 22px/1.55 Montserrat;
   margin-bottom: 50px;
   color: #ffffff;
 }
@@ -1850,21 +1851,21 @@ blockquote span::before {
 }
 
 .section-hero__title span {
-  font: normal 700 18px/1 Oswald;
+  font: normal 700 18px/1  Montserrat, sans-serif;
   margin: 0;
   color: #e63619;
   text-transform: uppercase;
 }
 
 .section-hero__title .uk-h1 {
-  font: normal 700 70px/1.1 Oswald;
+  font: normal 700 70px/1.1  Montserrat, sans-serif;
   margin: 5px 0 0;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .section-hero__text {
-  font: normal 400 22px/1.55 Oxygen;
+  font: normal 400 22px/1.55  Montserrat, sans-serif;
   margin-top: 20px;
   color: #ffffff;
 }
@@ -1885,7 +1886,7 @@ blockquote span::before {
 }
 
 .section-hero__form .uk-select {
-  font: normal 500 18px Oswald;
+  font: normal 500 18px  Montserrat, sans-serif;
   color: #222222;
   text-transform: uppercase;
 }
@@ -1905,7 +1906,7 @@ blockquote span::before {
 }
 
 .section-hero__breadcrumb .uk-breadcrumb > * > * {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px  Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   color: #e63619;
@@ -2011,7 +2012,7 @@ body.page-home .section-hero__content {
 }
 
 .about-item__desc {
-  font: normal 400 16px/1.75 Oxygen;
+  font: normal 400 16px/1.75  Montserrat, sans-serif;
   padding: 0 40px 0 0;
   color: #777777;
   text-align: right;
@@ -2117,7 +2118,7 @@ body.page-home .section-hero__content {
   display: block;
   margin-bottom: 40px;
   color: #222222;
-  font-family: Oswald;
+  font-family:  Montserrat, sans-serif;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -2248,7 +2249,7 @@ body.page-home .section-hero__content {
 }
 
 .product-item__name a {
-  font: normal 500 22px/1.1 Oswald;
+  font: normal 500 22px/1.1  Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   color: #222222;
@@ -2264,27 +2265,27 @@ body.page-home .section-hero__content {
 }
 
 .product-item__manufacturer {
-  font: normal 300 12px/1.1 Oswald;
+  font: normal 300 12px/1.1  Montserrat, sans-serif;
   color: #666666;
   text-transform: uppercase;
 }
 
 .product-item__category {
-  font: normal 300 14px/normal Oswald;
+  font: normal 300 14px/normal  Montserrat, sans-serif;
   display: none;
   color: #222222;
   text-transform: uppercase;
 }
 
 .product-item__category a {
-  font: normal 300 14px/normal Oswald;
+  font: normal 300 14px/normal  Montserrat, sans-serif;
   color: #e63619;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
 .product-item__price {
-  font: normal 500 30px/1.1 Oswald;
+  font: normal 500 30px/1.1  Montserrat, sans-serif;
   color: #e63619;
     margin-top: -10px;
 }
@@ -2299,7 +2300,7 @@ body.page-home .section-hero__content {
 }
 
 .product-item__label {
-  font: normal 400 12px/2.5 Oswald;
+  font: normal 400 12px/2.5  Montserrat, sans-serif;
   background: #61c00d;
   display: none;
   position: absolute;
@@ -2380,14 +2381,14 @@ body.page-home .section-hero__content {
 }
 
 .list-info-item__title {
-  font: normal 600 16px/1.1 Oswald;
+  font: normal 600 16px/1.1  Montserrat, sans-serif;
   margin-bottom: 10px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .list-info-item__value {
-  font: normal 400 16px/1.1 Oxygen;
+  font: normal 400 16px/1.1  Montserrat, sans-serif;
   color: #777777;
 }
 
@@ -2442,14 +2443,14 @@ body.page-home .section-hero__content {
 }
 
 .specifications-list-item__title {
-  font: normal 200 14px/1.1 Oswald;
+  font: normal 200 14px/1.1 Montserrat, sans-serif;
   margin-bottom: 5px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .specifications-list-item__value {
-  font: normal 400 13px/1.1 Oxygen;
+  font: normal 400 13px/1.1 Montserrat, sans-serif;
   -o-text-overflow: ellipsis;
   overflow: hidden;
   color: #777777;
@@ -2497,7 +2498,7 @@ body.page-home .section-hero__content {
 }
 
 .section-products.section-products--2 .uk-subnav li a {
-  font: normal 400 18px/normal Oswald;
+  font: normal 400 18px/normal Montserrat, sans-serif;
   padding: 10px 25px;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -2664,7 +2665,7 @@ body.page-home .section-hero__content {
 }
 
 .section-info__content .block-icon__title {
-  font: normal 700 16px/1.63 Oswald;
+  font: normal 700 16px/1.63 Montserrat, sans-serif;
   margin: 0;
   color: #222222;
   text-align: left;
@@ -2701,7 +2702,7 @@ body.page-home .section-hero__content {
 }
 
 .section-info.section-info--2 blockquote {
-  font: normal 400 16px/1.75 Oxygen;
+  font: normal 400 16px/1.75 Montserrat, sans-serif;
   display: block;
   position: relative;
   margin-left: 112px;
@@ -2728,7 +2729,7 @@ body.page-home .section-hero__content {
 .section-info.section-info--2 blockquote h4,
 .section-info.section-info--2 blockquote h5,
 .section-info.section-info--2 blockquote h6 {
-  font: normal 700 22px/normal Oswald;
+  font: normal 700 22px/normal Montserrat, sans-serif;
   margin-bottom: 20px;
 }
 
@@ -2792,14 +2793,14 @@ body.page-home .section-hero__content {
 }
 
 .block-icon-info__title {
-  font: normal 700 22px/1.36 Oswald;
+  font: normal 700 22px/1.36 Montserrat, sans-serif;
   margin-right: 40px;
   color: #ffffff;
   white-space: nowrap;
 }
 
 .block-icon-info__text {
-  font: normal 400 16px/1.75 Oxygen;
+  font: normal 400 16px/1.75 Montserrat, sans-serif;
   color: #ffffff;
 }
 
@@ -2837,14 +2838,14 @@ body.page-home .section-hero__content {
 }
 
 .video-info__title {
-  font: normal 700 30px Oswald;
+  font: normal 700 30px Montserrat, sans-serif;
   margin-bottom: 30px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .video-info__subtitle {
-  font: normal 300 14px/2.14 Oswald;
+  font: normal 300 14px/2.14 Montserrat, sans-serif;
   margin-bottom: 50px;
   color: #e63619;
   text-transform: uppercase;
@@ -2913,7 +2914,7 @@ body.page-home .section-hero__content {
 }
 
 .video-box .btn-play span {
-  font: normal 300 14px Oswald;
+  font: normal 300 14px Montserrat, sans-serif;
   margin-top: 40px;
   color: #ffffff;
   text-transform: uppercase;
@@ -2934,7 +2935,7 @@ body.page-home .section-hero__content {
   top: -15%;
   left: -2%;
   color: transparent;
-  font: 700 200px/1 Oswald;
+  font: 700 200px/1 Montserrat, sans-serif;
   text-transform: uppercase;
   content: 'Autozolv';
   opacity: 0.5;
@@ -2985,7 +2986,7 @@ body.page-home .section-hero__content {
   right: 5%;
   transform: translateY(-50%);
   color: transparent;
-  font: 700 200px/1 Oswald;
+  font: 700 200px/1 Montserrat, sans-serif;
   text-transform: uppercase;
   content: 'Autozolv';
   opacity: 0.5;
@@ -3020,7 +3021,7 @@ body.page-home .section-hero__content {
 }
 
 .rental-item__title {
-  font: normal 500 30px/1.47 Oswald;
+  font: normal 500 30px/1.47 Montserrat, sans-serif;
   margin-bottom: 15px;
   color: #222222;
 }
@@ -3039,19 +3040,19 @@ body.page-home .section-hero__content {
 }
 
 .rental-item__price .label {
-  font: normal 300 12px Oswald;
+  font: normal 300 12px Montserrat, sans-serif;
   color: #666666;
   text-transform: uppercase;
 }
 
 .rental-item__price .price {
-  font: normal 500 30px/1 Oswald;
+  font: normal 500 30px/1 Montserrat, sans-serif;
   margin: 0 10px 0 20px;
   color: #e63619;
 }
 
 .rental-item__price .value {
-  font: normal 300 12px/normal Oswald;
+  font: normal 300 12px/normal Montserrat, sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -3070,7 +3071,7 @@ body.page-home .section-hero__content {
 }
 
 .rental-item__text {
-  font: normal 700 16px/1.75 Oxygen;
+  font: normal 700 16px/1.75 Montserrat, sans-serif;
   margin-bottom: 52px;
   padding-right: 12%;
   color: #222222;
@@ -3156,14 +3157,14 @@ body.page-home .section-hero__content {
 }
 
 .section-gallery-slider .gallery-slider-nav .slick-slide .uk-h4 {
-  font: normal 500 36px/1 Oswald;
+  font: normal 500 36px/1 Montserrat, sans-serif;
   margin: 0 0 10px 0;
   outline: 0;
   color: #ffffff;
 }
 
 .section-gallery-slider .gallery-slider-nav .slick-slide span {
-  font: normal 400 16px/1 Oxygen;
+  font: normal 400 16px/1 Montserrat, sans-serif;
   color: #ffffff;
 }
 
@@ -3251,7 +3252,7 @@ body.page-home .section-hero__content {
 }
 
 .review-item__desc {
-  font: normal 400 18px/1.89 Oxygen;
+  font: normal 400 18px/1.89 Montserrat, sans-serif;
   margin-bottom: 50px;
   color: #222222;
 }
@@ -3279,14 +3280,14 @@ body.page-home .section-hero__content {
 }
 
 .review-item__user-name {
-  font: normal 700 18px/1 Oswald;
+  font: normal 700 18px/1 Montserrat, sans-serif;
   margin-bottom: 10px;
   color: #222222;
   text-transform: uppercase;
 }
 
 .review-item__user-position {
-  font: normal 400 14px/1.3 Oxygen;
+  font: normal 400 14px/1.3 Montserrat, sans-serif;
   color: #777777;
 }
 
@@ -3354,7 +3355,7 @@ body.page-home .section-hero__content {
 }
 
 .product-card__badge {
-  font: normal 400 14px/1 Oswald;
+  font: normal 400 14px/1 Montserrat, sans-serif;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -3422,7 +3423,7 @@ body.page-home .section-hero__content {
 }
 
 .product-card__btns > ul > li > a span {
-  font: 500 14px Oswald;
+  font: 500 14px Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   display: none;
@@ -3471,7 +3472,7 @@ body.page-home .section-hero__content {
 }
 
 .product-card__title a {
-  font: normal 500 22px Oswald;
+  font: normal 500 22px Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   color: #222222;
@@ -3486,13 +3487,13 @@ body.page-home .section-hero__content {
 }
 
 .product-card__title span {
-  font: normal 300 12px Oswald;
+  font: normal 300 12px Montserrat, sans-serif;
   color: #666666;
   text-transform: uppercase;
 }
 
 .product-card__price {
-  font: normal 500 30px/2 Oswald;
+  font: normal 500 30px/2 Montserrat, sans-serif;
   color: #e63619;
 }
 
@@ -3546,12 +3547,12 @@ body.page-home .section-hero__content {
 }
 
 .news-card__author {
-  font: normal 400 14px/1.2 Oxygen;
+  font: normal 400 14px/1.2 Montserrat, sans-serif;
   color: #e63619;
 }
 
 .news-card__date {
-  font: normal 400 14px/1.2 Oxygen;
+  font: normal 400 14px/1.2 Montserrat, sans-serif;
   margin-left: 13px;
   padding-left: 13px;
   border-left: 1px solid #dddddd;
@@ -3563,7 +3564,7 @@ body.page-home .section-hero__content {
 }
 
 .news-card__title a {
-  font: normal 700 26px/1.38 Oswald;
+  font: normal 700 26px/1.38 Montserrat, sans-serif;
   -webkit-transition: 0.3;
   -o-transition: 0.3;
   color: #111111;
@@ -3580,7 +3581,7 @@ body.page-home .section-hero__content {
 .news-card__desc {
   margin-bottom: 35px;
   color: #777777;
-  font-family: Oxygen;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.75;
@@ -3606,7 +3607,7 @@ body.page-home .section-hero__content {
 }
 
 .news-card__more a {
-  font: normal 500 16px Oswald;
+  font: normal 500 16px Montserrat, sans-serif;
   background: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3759,7 +3760,7 @@ body.page-home .section-hero__content {
 }
 
 .article__title {
-  font: normal 700 32px/1.13 Oswald;
+  font: normal 700 32px/1.13 Montserrat, sans-serif;
   margin-bottom: 20px;
   color: #111111;
   letter-spacing: normal;
@@ -3767,7 +3768,7 @@ body.page-home .section-hero__content {
 }
 
 .article__title a {
-  font: normal 700 32px/1.13 Oswald;
+  font: normal 700 32px/1.13 Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   color: #111111;
@@ -3784,7 +3785,7 @@ body.page-home .section-hero__content {
 }
 
 .article__intro {
-  font: normal 400 16px/1.75 Oxygen;
+  font: normal 400 16px/1.75 Montserrat, sans-serif;
   margin-bottom: 40px;
   color: #777777;
 }
@@ -3809,7 +3810,7 @@ body.page-home .section-hero__content {
 }
 
 .article__more a {
-  font: normal 500 16px Oswald;
+  font: normal 500 16px Montserrat, sans-serif;
   background: #ffffff;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3875,7 +3876,7 @@ body.page-home .section-hero__content {
 }
 
 .article__tags b {
-  font: normal 500 16px/1.2 Oswald;
+  font: normal 500 16px/1.2 Montserrat, sans-serif;
   display: inline-block;
   margin-right: 10px;
   color: #222222;
@@ -3904,7 +3905,7 @@ body.page-home .section-hero__content {
 }
 
 .article__tags ul li a {
-  font: normal 400 14px/normal Oxygen;
+  font: normal 400 14px/normal Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   color: #111111;
@@ -3928,7 +3929,7 @@ body.page-home .section-hero__content {
 }
 
 .article__share b {
-  font: normal 500 16px/1.2 Oswald;
+  font: normal 500 16px/1.2 Montserrat, sans-serif;
   display: inline-block;
   margin-right: 10px;
   color: #222222;
@@ -3975,7 +3976,7 @@ body.page-home .section-hero__content {
 }
 
 .widjet--recent-posts .latest-news-item__title {
-  font: normal 500 18px/1.44 Oswald;
+  font: normal 500 18px/1.44 Montserrat, sans-serif;
   color: #111111;
 }
 
@@ -3986,7 +3987,7 @@ body.page-home .section-hero__content {
 }
 
 .widjet--recent-posts .latest-news-item__date {
-  font: normal 400 13px/1 Oxygen;
+  font: normal 400 13px/1 Montserrat, sans-serif;
   -webkit-box-align: center;
   -ms-flex-align: center;
   display: -webkit-box;
@@ -4076,7 +4077,7 @@ body.page-home .section-hero__content {
 }
 
 .article-nav__title .uk-h5 {
-  font: normal 500 22px/1.3 Oswald;
+  font: normal 500 22px/1.3 Montserrat, sans-serif;
   -o-text-overflow: ellipsis;
   margin: 0 0 10px 0;
   overflow: hidden;
@@ -4086,7 +4087,7 @@ body.page-home .section-hero__content {
 }
 
 .article-nav__title span {
-  font: normal 300 12px/1.2 Oswald;
+  font: normal 300 12px/1.2 Montserrat, sans-serif;
   color: #666666;
   text-transform: uppercase;
 }
@@ -4133,7 +4134,7 @@ body.page-home .section-hero__content {
 }
 
 .section-article-reviews .uk-h2 {
-  font: normal 700 32px/1.13 Oswald;
+  font: normal 700 32px/1.13 Montserrat, sans-serif;
   margin-bottom: 45px;
   margin-bottom: 25px;
   padding-left: 22px;
@@ -4150,25 +4151,25 @@ body.page-home .section-hero__content {
 }
 
 .section-article-reviews .uk-comment .uk-comment-title {
-  font: normal 400 18px/normal Oswald;
+  font: normal 400 18px/normal Montserrat, sans-serif;
   color: #222222;
   text-transform: uppercase;
 }
 
 .section-article-reviews .uk-comment .uk-text-meta {
-  font: normal 400 13px/normal Oxygen;
+  font: normal 400 13px/normal Montserrat, sans-serif;
   display: block;
   color: #777777;
 }
 
 .section-article-reviews .uk-comment .uk-comment-body {
-  font: normal 400 16px/normal Oxygen;
+  font: normal 400 16px/normal Montserrat, sans-serif;
   margin: 20px 0;
   color: #777777;
 }
 
 .section-article-reviews .uk-comment .link-more {
-  font: normal 700 14px/normal Oswald;
+  font: normal 700 14px/normal Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   color: #e63619;
@@ -4203,7 +4204,7 @@ body.page-home .section-hero__content {
 }
 
 .filter-more__desc .uk-h4 {
-  font: normal 500 22px/normal Oswald;
+  font: normal 500 22px/normal Montserrat, sans-serif;
   margin: 0;
   color: #ffffff;
   text-transform: uppercase;
@@ -4211,7 +4212,7 @@ body.page-home .section-hero__content {
 }
 
 .filter-more__desc span {
-  font: normal 300 12px/normal Oswald;
+  font: normal 300 12px/normal Montserrat, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -4255,7 +4256,7 @@ body.page-home .section-hero__content {
 }
 
 .result-count {
-  font: normal 400 18px/normal Oxygen;
+  font: normal 400 18px/normal Montserrat, sans-serif;
   color: #222222;
 }
 
@@ -4314,7 +4315,7 @@ body.page-home .section-hero__content {
 }
 
 .range-box__desc {
-  font: normal 400 14px/1 Oxygen;
+  font: normal 400 14px/1 Montserrat, sans-serif;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   -webkit-box-align: center;
@@ -4329,7 +4330,7 @@ body.page-home .section-hero__content {
 }
 
 .range-box__desc input {
-  font: normal 700 16px/1 Oxygen;
+  font: normal 700 16px/1 Montserrat, sans-serif;
   display: inline-block;
   width: 60px;
   min-width: auto;
@@ -4344,31 +4345,31 @@ body.page-home .section-hero__content {
 }
 
 .page-product__title .uk-h1 {
-  font: normal 600 60px/1.2 Oswald;
+  font: normal 600 60px/1.2 Montserrat, sans-serif;
   margin: 0 0 10px 0;
   color: #222222;
   text-transform: uppercase;
 }
 
 .page-product__title span {
-  font: normal 400 18px/normal Oxygen;
+  font: normal 400 18px/normal Montserrat, sans-serif;
   color: #777777;
 }
 
 .page-product__price {
-  font: normal 400 16px/normal Oxygen;
+  font: normal 400 16px/normalMontserrat, sans-serif;
   color: #777777;
   text-align: right;
 }
 
 .page-product__price .current {
-  font: normal 500 60px/1 Oswald;
+  font: normal 500 60px/1 Montserrat, sans-serif;
   display: inline-block;
   color: #e63619;
 }
 
 .page-product__price .old {
-  font: normal 500 24px/1 Oswald;
+  font: normal 500 24px/1 Montserrat, sans-serif;
   margin-left: 10px;
   color: #222;
   text-decoration: line-through;
@@ -4389,7 +4390,7 @@ body.page-home .section-hero__content {
 }
 
 .page-product__btns button {
-  font: normal 400 16px/2.94 Oswald;
+  font: normal 400 16px/2.94 Montserrat, sans-serif;
   background: #eeeeee;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -4490,7 +4491,7 @@ body.page-home .section-hero__content {
 }
 
 .product-list-info-item__title {
-  font: normal 700 14px/normal Oswald;
+  font: normal 700 14px/normal Montserrat, sans-serif;
   margin-bottom: 10px;
   color: #222222;
   text-transform: uppercase;
@@ -4498,7 +4499,7 @@ body.page-home .section-hero__content {
 
 .product-list-info-item__value {
   color: #777777;
-  font-family: Oxygen;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -4552,13 +4553,13 @@ body.page-home .section-hero__content {
 }
 
 .product-specifications-item__title {
-  font: normal 400 14px/normal Oswald;
+  font: normal 400 14px/normal Montserrat, sans-serif;
   color: #222222;
   text-transform: uppercase;
 }
 
 .product-specifications-item__value {
-  font: normal 400 14px/normal Oxygen;
+  font: normal 400 14px/normal Montserrat, sans-serif;
   -o-text-overflow: ellipsis;
   overflow: hidden;
   color: #777777;
@@ -4635,13 +4636,13 @@ body.page-home .section-hero__content {
 }
 
 .product-block-info .user__name {
-  font: normal 700 24px/normal Oswald;
+  font: normal 700 24px/normal Montserrat, sans-serif;
   color: #222222;
   text-transform: uppercase;
 }
 
 .product-block-info .user__date {
-  font: normal 400 14px/normal Oxygen;
+  font: normal 400 14px/normal Montserrat, sans-serif;
   color: #777777;
 }
 
@@ -4691,19 +4692,18 @@ body.page-home .section-hero__content {
 }
 
 .product-block-info .block-icon__title {
-  font: normal 400 16px/1 Oxygen;
-  margin-bottom: 10px;
+  font: normal 400 16px/1 Montserrat, sans-serif;
   color: #777777;
 }
 
 .product-block-info .block-icon__value {
-  font: normal 600 22px/1 Oswald;
+  font: normal 600 22px/1 Montserrat, sans-serif;
   margin-top: 5px;
   color: #222222;
 }
 
 .product-block-info .block-icon__value a {
-  font: normal 600 22px/normal Oswald;
+  font: normal 600 22px/normal Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   color: #222222;
@@ -4750,7 +4750,7 @@ body.page-home .section-hero__content {
 }
 
 .page-product-head .uk-breadcrumb > * > * {
-  font: normal 400 16px Oxygen;
+  font: normal 400 16px Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   color: #e63619;
@@ -4791,7 +4791,7 @@ body.page-home .section-hero__content {
 }
 
 .contact-info-title {
-  font: normal 500 30px/1.53 Oswald;
+  font: normal 500 30px/1.53 Montserrat, sans-serif;
   margin-bottom: 70px;
   color: #222222;
   text-align: center;
@@ -4819,19 +4819,19 @@ body.page-home .section-hero__content {
 }
 
 .contact-info-item__title {
-  font: normal 400 16px/1.3 Oxygen;
+  font: normal 400 16px/1.3 Montserrat, sans-serif;
   margin-bottom: 15px;
   color: #777777;
 }
 
 .contact-info-item__value {
-  font: normal 700 18px/1.3 Oxygen;
+  font: normal 700 18px/1.3 Montserrat, sans-serif;
   margin-bottom: 15px;
   color: #222222;
 }
 
 .contact-info-item__value a {
-  font: normal 700 18px/1.3 Oxygen;
+  font: normal 700 18px/1.3 Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   color: #222222;
@@ -4866,7 +4866,7 @@ body.page-home .section-hero__content {
   left: 50%;
   transform: translateX(-50%);
   color: transparent;
-  font: 700 200px/1 Oswald;
+  font: 700 200px/1 Montserrat, sans-serif;
   text-transform: uppercase;
   content: 'Autozolv';
   opacity: 0.5;
@@ -6575,7 +6575,7 @@ footer {
   font-weight: 700;
   color: #333;
   margin: 10px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: Montserrat, sans-serif;
   letter-spacing: 1px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -6930,7 +6930,7 @@ padding-left: 64px;
 /* about us table */
 .pricing-section .container {
   color: #000000;
-  font-family: 'Quicksand';
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -7080,7 +7080,7 @@ padding-left: 64px;
   border-radius: 0.45em;
   border: none;
   background-color: red;
-  font-family: var(--font-title);
+  font-family: Montserrat, sans-serif;
   font-size: 1.125rem;
   color: var(--black);
   cursor: pointer;
@@ -7095,7 +7095,7 @@ padding-left: 64px;
 
 /* General styling */
 .tab-container {
-  font-family: Arial, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 20px;
 }
 
@@ -7265,3 +7265,5 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
