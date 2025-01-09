@@ -180,7 +180,7 @@ body {
 .uk-link-toggle:hover .uk-link,
 .uk-link:hover,
 a:hover {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: underline;
 }
 
@@ -194,8 +194,8 @@ a:hover {
 }
 
 .uk-button-danger {
-  background: #e63619;
-  border-color: #e63619;
+  background:#e51a22;
+  border-color: #e51a22;
 }
 
 .uk-button-danger:before {
@@ -483,7 +483,7 @@ a:hover {
 .uk-input:focus,
 .uk-select:focus,
 .uk-textarea:focus {
-  border-color: #e63619;
+  border-color: #e51a22;
 }
 
 .uk-input,
@@ -604,7 +604,7 @@ a:hover {
 }
 
 .uk-pagination > .uk-active > * {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .section-title {
@@ -621,7 +621,7 @@ a:hover {
   font: normal 700 18px/normal  Montserrat, sans-serif;
   display: block;
   margin-bottom: 10px;
-  color: #e63619;
+  color: #e51a22;
   text-transform: uppercase;
 }
 
@@ -691,7 +691,7 @@ a:hover {
 .support__link:hover,
 .support__link:focus,
 .support__link:active {
-  background: #e63619;
+  background: #e51a22;
   text-decoration: none;
 }
 
@@ -702,7 +702,7 @@ a:hover {
 }
 
 .support__icon {
-  color: #e63619;
+  color: #e51a22;
   font-size: 36px;
   line-height: 1;
 }
@@ -765,7 +765,7 @@ a:hover {
 .social-list__link:hover,
 .social-list__link:focus,
 .social-list__link:active {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .list-decor {
@@ -875,7 +875,7 @@ a:hover {
 .latest-news-item__title:hover,
 .latest-news-item__title:focus,
 .latest-news-item__title:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -1033,20 +1033,20 @@ a:hover {
 .categories-item__link:hover,
 .categories-item__link:focus,
 .categories-item__link:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
 .categories-item__link:hover .categories-item__title,
 .categories-item__link:focus .categories-item__title,
 .categories-item__link:active .categories-item__title {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .categories-item__link:hover .categories-item__title .uk-icon,
 .categories-item__link:focus .categories-item__title .uk-icon,
 .categories-item__link:active .categories-item__title .uk-icon {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .categories-item__title {
@@ -1115,7 +1115,7 @@ a:hover {
 .tags-cloud li a:hover,
 .tags-cloud li a:focus,
 .tags-cloud li a:active {
-  background: #e63619;
+  background: #e51a22;
   color: #ffffff;
   text-decoration: none;
 }
@@ -1172,7 +1172,7 @@ a:hover {
 .latest-motorcycles__price {
   font: normal 500 24px/1.1  Montserrat, sans-serif;
   margin-bottom: 15px;
-  color: #e63619;
+  color: #e51a22;
 }
 
 .latest-motorcycles__info {
@@ -1201,7 +1201,7 @@ blockquote {
   padding-top: 40px;
   padding-bottom: 10px;
   padding-left: 50px;
-  border-left: 3px solid #e63619;
+  border-left: 3px solid #e51a22;
   color: #111111;
   letter-spacing: normal;
   text-align: left;
@@ -1394,7 +1394,7 @@ blockquote span::before {
 }
 
 .menu-btn {
-  background: #e63619;
+  background: #e51a22;
 }
 
 .page-footer {
@@ -1460,7 +1460,7 @@ blockquote span::before {
 }
 
 .page-nav .uk-navbar-nav > li.uk-active a {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .page-nav [class*=uk-navbar-dropdown-bottom] {
@@ -1500,11 +1500,11 @@ blockquote span::before {
 .uk-offcanvas-bar .uk-nav > li > a:hover,
 .uk-offcanvas-bar .uk-nav > li > a:focus,
 .uk-offcanvas-bar .uk-nav > li > a:active {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .uk-offcanvas-bar .uk-nav > li.uk-active a {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .uk-offcanvas-bar .support__link {
@@ -1796,7 +1796,7 @@ blockquote span::before {
 
 .slideshow-item__title span {
   font: normal 600 18px/normal  Montserrat, sans-serif;
-  color: #e63619;
+  color: #e51a22;
   text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
 }
@@ -1853,7 +1853,7 @@ blockquote span::before {
 .section-hero__title span {
   font: normal 700 18px/1  Montserrat, sans-serif;
   margin: 0;
-  color: #e63619;
+  color: #e51a22;
   text-transform: uppercase;
 }
 
@@ -1909,7 +1909,7 @@ blockquote span::before {
   font: normal 400 16px  Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  color: #e63619;
+  color: #e51a22;
   letter-spacing: normal;
   transition: 0.5s;
 }
@@ -2058,7 +2058,7 @@ body.page-home .section-hero__content {
 
 .section-category .uk-dotnav > .uk-active > * {
   background: #ffffff;
-  border-color: #e63619;
+  border-color: #e51a22;
 }
 
 .category-item {
@@ -2145,7 +2145,7 @@ body.page-home .section-hero__content {
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  color: #e63619;
+  color: #e51a22;
   font-size: 14px;
   font-weight: 300;
   text-align: right;
@@ -2260,7 +2260,7 @@ body.page-home .section-hero__content {
 .product-item__name a:hover,
 .product-item__name a:focus,
 .product-item__name a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -2279,24 +2279,26 @@ body.page-home .section-hero__content {
 
 .product-item__category a {
   font: normal 300 14px/normal  Montserrat, sans-serif;
-  color: #e63619;
+  color: #e51a22;
   text-decoration: underline;
   text-transform: uppercase;
 }
 
 .product-item__price {
   font: normal 500 30px/1.1  Montserrat, sans-serif;
-  color: #e63619;
+  color: #e51a22;
     margin-top: -10px;
 }
 
 .product-item__media {
   display: block;
   position: relative;
+  height: 400px;
 }
 
 .product-item__media img {
   width: 100%;
+  
 }
 
 .product-item__label {
@@ -2338,7 +2340,7 @@ body.page-home .section-hero__content {
 }
 
 .product-item .product-item__whish.is-active {
-  background: #e63619;
+  background: #e51a22;
   color: #ffffff;
 }
 
@@ -2494,7 +2496,7 @@ body.page-home .section-hero__content {
 .section-products.section-products--2 .uk-subnav li.uk-active a {
   border: 1px solid #dddddd;
   background: transparent;
-  color: #e63619;
+  color: #e51a22;
 }
 
 .section-products.section-products--2 .uk-subnav li a {
@@ -2707,7 +2709,7 @@ body.page-home .section-hero__content {
   position: relative;
   margin-left: 112px;
   padding-left: 30px;
-  border-left: 4px solid #e63619;
+  border-left: 4px solid #e51a22;
   background: none;
 }
 
@@ -2847,7 +2849,7 @@ body.page-home .section-hero__content {
 .video-info__subtitle {
   font: normal 300 14px/2.14 Montserrat, sans-serif;
   margin-bottom: 50px;
-  color: #e63619;
+  color: #e51a22;
   text-transform: uppercase;
 }
 
@@ -3048,7 +3050,7 @@ body.page-home .section-hero__content {
 .rental-item__price .price {
   font: normal 500 30px/1 Montserrat, sans-serif;
   margin: 0 10px 0 20px;
-  color: #e63619;
+  color: #e51a22;
 }
 
 .rental-item__price .value {
@@ -3417,7 +3419,7 @@ body.page-home .section-hero__content {
   height: 32px;
   padding: 0 10px;
   border-radius: 3px;
-  color: #e63619;
+  color: #e51a22;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -3482,7 +3484,7 @@ body.page-home .section-hero__content {
 .product-card__title a:hover,
 .product-card__title a:focus,
 .product-card__title a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -3494,7 +3496,7 @@ body.page-home .section-hero__content {
 
 .product-card__price {
   font: normal 500 30px/2 Montserrat, sans-serif;
-  color: #e63619;
+  color: #e51a22;
 }
 
 .news-card {
@@ -3548,7 +3550,7 @@ body.page-home .section-hero__content {
 
 .news-card__author {
   font: normal 400 14px/1.2 Montserrat, sans-serif;
-  color: #e63619;
+  color: #e51a22;
 }
 
 .news-card__date {
@@ -3574,7 +3576,7 @@ body.page-home .section-hero__content {
 .news-card__title a:hover,
 .news-card__title a:focus,
 .news-card__title a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -3780,7 +3782,7 @@ body.page-home .section-hero__content {
 .article__title a:hover,
 .article__title a:focus,
 .article__title a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -3915,7 +3917,7 @@ body.page-home .section-hero__content {
 .article__tags ul li a:hover,
 .article__tags ul li a:focus,
 .article__tags ul li a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -3983,7 +3985,7 @@ body.page-home .section-hero__content {
 .widjet--recent-posts .latest-news-item__title:hover,
 .widjet--recent-posts .latest-news-item__title:focus,
 .widjet--recent-posts .latest-news-item__title:active {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .widjet--recent-posts .latest-news-item__date {
@@ -4172,7 +4174,7 @@ body.page-home .section-hero__content {
   font: normal 700 14px/normal Montserrat, sans-serif;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  color: #e63619;
+  color: #e51a22;
   text-decoration: underline;
   text-transform: uppercase;
   transition: 0.3s;
@@ -4186,7 +4188,7 @@ body.page-home .section-hero__content {
 }
 
 .filter-more {
-  background: #e63619;
+  background: #e51a22;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-box-align: center;
@@ -4261,7 +4263,7 @@ body.page-home .section-hero__content {
 }
 
 .result-count span {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .sorting-btn {
@@ -4365,7 +4367,7 @@ body.page-home .section-hero__content {
 .page-product__price .current {
   font: normal 500 60px/1 Montserrat, sans-serif;
   display: inline-block;
-  color: #e63619;
+  color: #e51a22;
 }
 
 .page-product__price .old {
@@ -4416,7 +4418,7 @@ body.page-home .section-hero__content {
 }
 
 .page-product__btns button.danger {
-  background: #e63619;
+  background: #e51a22;
   color: #ffffff;
 }
 
@@ -4663,7 +4665,7 @@ body.page-home .section-hero__content {
 }
 
 .product-block-info .social-list .fa-google-plus-g {
-  color: #e63619;
+  color: #e51a22;
 }
 
 .product-block-info .social-list .fa-linkedin-in {
@@ -4713,7 +4715,7 @@ body.page-home .section-hero__content {
 .product-block-info .block-icon__value a:hover,
 .product-block-info .block-icon__value a:focus,
 .product-block-info .block-icon__value a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -4753,7 +4755,7 @@ body.page-home .section-hero__content {
   font: normal 400 16px Montserrat, sans-serif;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  color: #e63619;
+  color: #e51a22;
   letter-spacing: normal;
   transition: 0.5s;
 }
@@ -4841,7 +4843,7 @@ body.page-home .section-hero__content {
 .contact-info-item__value a:hover,
 .contact-info-item__value a:focus,
 .contact-info-item__value a:active {
-  color: #e63619;
+  color: #e51a22;
   text-decoration: none;
 }
 
@@ -6295,7 +6297,7 @@ body.page-home .section-hero__content {
   bottom: 5px;
   left: 5px;
   border: 3px solid transparent;
-  border-top-color: #e63619;
+  border-top-color: #e51a22;
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
@@ -6552,7 +6554,7 @@ footer {
 
 /* Icon container styles */
 .icon-wrapper {
-  background: linear-gradient(135deg, #ff8a80, #ff5252);
+  background: linear-gradient(135deg, #ff8a80, #e51a22);
   padding: 20px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(255, 82, 82, 0.3);
@@ -6650,7 +6652,7 @@ footer {
 
 .pricing-plan ul li::before {
   content: "•";
-  color: red;
+  color: #e51a22;
   display: inline-block;
   width: 20px;
   margin-left: -15px;
@@ -6665,8 +6667,8 @@ footer {
   color: #fff;
   padding: 10px 20px;
   text-align: center;
-  background:red;
-  border: 2px solid red;
+  background:#e51a22;
+  border: 2px solid #e51a22;
   border-radius: 5px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -7079,7 +7081,7 @@ padding-left: 64px;
   font-weight: bold;
   border-radius: 0.45em;
   border: none;
-  background-color: red;
+  background-color: #e51a22;
   font-family: Montserrat, sans-serif;
   font-size: 1.125rem;
   color: var(--black);
@@ -7121,7 +7123,7 @@ padding-left: 64px;
 }
 
 .tab-nav .tab-item.active {
-  background-color: red;
+  background-color: #e51a22;
   color: white;
 }
 
