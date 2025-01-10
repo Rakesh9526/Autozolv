@@ -270,11 +270,11 @@ p {
     /* background-color: #fff; */
     border-radius: 8px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); */
-    text-align: center;
+    text-align: left;
 }
 
 .core-values {
-    list-style: none;
+    list-style:circle;
     padding: 0;
     margin: 0;
 }
@@ -365,7 +365,18 @@ p {
 <!-- Map Section -->
 <div class="map-container">
   <h1 class="section-title">We Operate in the Following Countries</h1>
-  <svg id="map" width="100%" height="450"></svg>
+  <div class="flag-container " style="margin-top: 20px;">
+    <!-- <h2 class="col-md-4">Countries Available </h2> -->
+    <div class="flag eu" title="European Union"></div>
+    <div class="flag uae" title="United Arab Emirates"></div>
+    <div class="flag qatar" title="Qatar"></div>
+    <div class="flag oman" title="Oman"></div>
+    <div class="flag saudi" title="Saudi Arabia"></div>
+    <div class="flag yemen" title="Yemen"></div>
+    <div class="flag iraq" title="Iraq"></div>
+    <div class="flag india" title="India"></div>
+  </div>
+  <!-- <svg id="map" width="100%" height="450"></svg> -->
 </div>
 
 <!-- WhatsApp Button -->
@@ -665,20 +676,19 @@ p {
             
             
           <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
-            <li class="uk-parent"><a href="index.html">Home</a>
-            </li>
+            <li ><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li class="uk-parent"><a href="#">products</a>
+            <li class="uk-parent"><a href="page-shop-grid.html">Products</a>
               <ul class="uk-nav-sub">
                 <li><a href="def.html">Diesel Exhaust Fluid </a></li>
-                <li><a href="page-shop-grid.html">product list</a></li>
+                <!-- <li><a href="page-shop-grid.html">product list</a></li> -->
                 <li><a href="#">AutoCare</a></li>
                 <li><a href="#">lubricants</a></li>
               </ul>
             </li>
-            <li class="uk-parent"><a href="#">Franchises</a>
+            <li class="uk-parent"><a href="franchise.html">Franchises</a>
               <ul class="uk-nav-sub">
-                <li><a href="franchise.html">Franchises</a></li>
+                <!-- <li><a href="franchise.html">Franchises</a></li> -->
                 <li><a href="faq.html">Frequently Asked Questions</a></li>
               </ul>
             </li>
@@ -707,6 +717,7 @@ p {
       </div>
     </div><!-- End Дополнительные блоки-->
   </footer>
+  
       
   </div>
   <script>
