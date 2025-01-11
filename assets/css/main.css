@@ -191,6 +191,7 @@ a:hover {
   border-radius: 3px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .uk-button-danger {
@@ -199,7 +200,7 @@ a:hover {
 }
 
 .uk-button-danger:before {
-  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' data-svg='triangle-right'%3E%3Cpolygon points='8 5 13 10 8 15' fill='%23fff'%3E%3C/polygon%3E%3C/svg%3E") no-repeat center/15px 15px #222222;
+  /* background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' data-svg='triangle-right'%3E%3Cpolygon points='8 5 13 10 8 15' fill='%23fff'%3E%3C/polygon%3E%3C/svg%3E") no-repeat center/15px 15px #222222; */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   position: absolute;
@@ -224,7 +225,7 @@ a:hover {
 }
 
 .uk-button-secondary:before {
-  background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' data-svg='triangle-right'%3E%3Cpolygon points='8 5 13 10 8 15' fill='%23fff'%3E%3C/polygon%3E%3C/svg%3E") no-repeat center/15px 15px #e63619;
+  /* background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' data-svg='triangle-right'%3E%3Cpolygon points='8 5 13 10 8 15' fill='%23fff'%3E%3C/polygon%3E%3C/svg%3E") no-repeat center/15px 15px #e63619; */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   position: absolute;
@@ -736,8 +737,8 @@ a:hover {
   -ms-flex-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  align-items: center;
+  display:ruby;
+  align-items: left;
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -1818,6 +1819,7 @@ blockquote span::before {
 
 .slideshow-item__btns .uk-button + .uk-button {
   margin-left: 35px;
+  text-align: center;
 }
 
 .section-hero {
@@ -6444,7 +6446,7 @@ footer {
 
   .call-to-action-btn a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0 20px;
     font-size: 1rem;
     text-align: center;
     margin-left: -10px;
@@ -6546,21 +6548,21 @@ footer {
   width: 220px;
   height: 250px;
 
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
 /* Hover effects for counter containers */
-.counter-container:hover {
+/* .counter-container:hover {
   transform: translateY(-10px);
   box-shadow: 15px 15px 30px #d1d1d1, -15px -15px 30px #ffffff;
-}
+} */
 
 /* Icon container styles */
 .icon-wrapper {
-  background: linear-gradient(135deg, #ff8a80, #e51a22);
+  background: linear-gradient(135deg, #e51a22, #e51a22);
   padding: 20px;
   border-radius: 50%;
-  box-shadow: 0 10px 20px rgba(255, 82, 82, 0.3);
+  /* box-shadow: 0 10px 20px rgba(255, 82, 82, 0.3); */
   margin-bottom: 15px;
   display: flex;
   justify-content: center;
@@ -6587,12 +6589,13 @@ footer {
 
 /* Description text styles */
 .counter-container span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #666;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 1px;
+  font-family: Montserrat, sans-serif;
 }
 
 /* Responsive design for smaller screens */
@@ -6787,7 +6790,7 @@ padding-left: 64px;
 
 /* falg home */
     .flag-container {
-      display:ruby;
+      display:flex;
       justify-content: center;
       align-items: center;
       gap: 200px;
@@ -6918,7 +6921,7 @@ padding-left: 64px;
 
 /* Hover Effect for Text */
 .logo-item:hover p {
-  color: black; /* Change text color on hover (blue shade) */
+  color: #e51a22; /* Change text color on hover (blue shade) */
   font-size: 15px; /* Slightly enlarge the font on hover */
   font-weight: bold; /* Add emphasis to the font */
 }
@@ -7369,8 +7372,9 @@ p {
 
 .slideshow-item__btns a {
   margin: 5px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: 1rem;
+  text-align: center;
 }
 
 /* Medium Screens */
@@ -7382,6 +7386,7 @@ p {
   .slideshow-item__btns a {
     font-size: 0.9rem;
     padding: 8px 16px;
+    text-align: center;
   }
 }
 
@@ -7410,7 +7415,7 @@ p {
 
   .slideshow-item__btns a {
     font-size: 0.7rem;
-    padding: 5px 10px;
+    padding: 2px 10px;
   }
 }
 
@@ -7458,34 +7463,31 @@ p {
 
 .flag-container {
   display: flex;
-  flex-wrap: wrap; /* Allow flags to wrap to the next row */
-  justify-content: center; /* Center flags in the container */
-  gap: 15px; /* Add space between flags */
+  flex-wrap: wrap; /* Allows flags to wrap onto the next line */
+  justify-content: space-around; /* Adds equal spacing between flags */
+  align-items: center; /* Aligns flags vertically */
+  gap: 10px; /* Adds consistent spacing between flags */
 }
 
 .flag {
-  width: 80px; /* Default width of flags */
-  height: 50px; /* Default height of flags */
-  background-size: cover; /* Ensure the background image covers the flag */
-  background-position: center; /* Center the background image */
-  border: 1px solid #ccc; /* Optional border for better visibility */
-  border-radius: 5px; /* Optional rounded corners */
-  
+  width: 80px; /* Adjust the size of each flag */
+  height: 50px;
+  background-size: cover; /* Ensures the background image covers the entire flag area */
+  border: 1px solid #ccc; /* Optional: Adds a border around each flag */
+  border-radius: 5px; /* Optional: Gives flags a slightly rounded appearance */
 }
 
-@media screen and (max-width: 768px) {
-  .flag {
-    width: 60px; /* Smaller size for mobile screens */
-    height: 40px;
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .flag-container {
+    justify-content: center; /* Center-align flags on smaller screens */
+  }
+
+  .flag-container > .flag {
+    flex: 1 1 calc(25% - 20px); /* Each flag takes up 25% width minus gaps */
+    max-width: calc(25% - 20px); /* Prevents flags from exceeding container width */
   }
 }
 
-@media screen and (max-width: 480px) {
-  .flag {
-    width: 50px; /* Further reduced size for very small screens */
-    height: 30px;
-  }
-}
 
 
 .product-item__media img {
@@ -7578,3 +7580,223 @@ p {
   margin: 0 auto;
 }
 
+.sub-heading {
+  font-size: 1.5rem; /* Smaller font for the subheading */
+  margin-top: 0.5rem; /* Space below the main heading */
+  font-weight: 300; /* Light font weight */
+  color: white;
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .sub-heading {
+    font-size: 1.3rem; /* Slightly smaller subheading font */
+  }
+}
+
+@media (max-width: 768px) {
+
+  .sub-heading {
+    font-size: 1rem; /* Smaller subheading font for mobile */
+  }
+}
+
+
+/* General Styles for Slideshow Content */
+.slideshow-item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align content */
+  text-align: left;
+  width: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+/* Buttons Section */
+.slideshow-item__btns {
+  margin-top: 20px; /* Adjust spacing between the content and buttons */
+}
+
+/* Container Styling */
+.uk-container {
+  padding: 0; /* Remove padding for full-width alignment */
+  margin-left: ;
+}
+
+/* Adjust for laptop screens */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .uk-container {
+    margin-left: -200px; /* Move content slightly more to the left */
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .uk-container {
+    padding: 0 15px; /* Add some padding on smaller screens */
+  }
+
+  .slideshow-item__title .uk-h2 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .sub-heading {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uk-container {
+    padding: 0 10px;
+  }
+
+  .slideshow-item__title .uk-h2 {
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-size: 14px;
+  }
+
+  .slideshow-item__btns a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .uk-container {
+    padding: 0 5px;
+  }
+
+  .slideshow-item__title .uk-h2 {
+    font-size: 20px;
+  }
+
+  .sub-heading {
+    font-size: 12px;
+  }
+
+  .slideshow-item__btns a {
+    font-size: 12px;
+    padding: 2px 10px;
+  }
+}
+
+/* home page accreditations */
+
+/* Container styling */
+.accreditations {
+  text-align: center;
+  padding: 20px;
+}
+
+.accreditations h2,
+.accreditations h3 {
+  margin-bottom: 20px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px; /* Fixed width for uniform logo items */
+}
+
+.logo-container {
+  width: 100%;
+  height: 100px; /* Fixed height for logos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-container img {
+  width: 100%; /* Ensure image fits container width */
+  height: 100px; /* Maintain aspect ratio */
+  max-height: 100%; /* Prevent exceeding container height */
+  filter: grayscale(100%); /* Convert all images to grayscale */
+  /* transition: filter 0.3s ease-in-out; Smooth color transition on hover */
+  object-fit: contain; /* Ensures proper scaling without cropping */
+}
+
+.logo-container img:hover {
+  filter: grayscale(0%); /* Revert to original color on hover */
+}
+
+.logo-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .logo-item {
+    width: 100px; /* Reduce size for smaller screens */
+  }
+
+  .logo-container {
+    height: 80px;
+  }
+}
+
+.footer-logo {
+  width: 150px; /* Set the logo to a fixed width */
+  height: auto; /* Ensure the height scales with the width */
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 120px; /* Smaller logo for tablet and smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo {
+    width: 100px; /* Even smaller logo for mobile screens */
+  }
+}
+
+/* Ensure the section title looks consistent */
+.parent-company-section .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container for brand logos */
+.brands-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Each brand card */
+.brand-card {
+  width: 150px; /* Set a fixed width for each card */
+  height: 150px; /* Set a fixed height to ensure uniformity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflow content */
+}
+
+/* Brand image styling */
+.card__background {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Maintain aspect ratio without stretching */
+}
